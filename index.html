@@ -15,20 +15,20 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div>
-          <a href="index.html" class="site-logo"><img src="images/logo.png" alt="Lacie Wilson" /></a>
-        </div>
-        <div class="navbuttons">
+      <div class="topheader">
+        <a href="index.html" class="site-logo">
+          <img src="images/logo.png" alt="Lacie Wilson" />
+        </a>
+    <nav class="navigation">
        <ul>
          <li class="home"><a href="index.html">Home</a></li>
          <li class="about"><a href="about.html">About</a></li>
          <li class="contact"><a href="contact.html">Contact</a></li>
          <li class="portfolio"><a href="portfolio.html">Portfolio</a></li>
        </ul>
-     </div>
-   </nav>
-   <div class="container hero">
+    </nav>
+    </div>
+    <div class="hero">
        <h1 class="animated fadeIn">BEAUTIFULLY <span class="simple">SIMPLE<span>.</h1>
        <p>I’m a UX designer with a background in coding. I like
          designing beautiful and intuitive user interfaces and
@@ -36,27 +36,33 @@
          interface, and stay for the experience.  </p>
        <p class="signature">- Lacie Wilson</p>
      </div>
+     <div class="centerworkbutton">
+       <a href="#" class="btn" id="buttondown">SEE MY WORK</a>
+     </div>
     </header>
 
    <!-- Work -->
    <section class="work">
      <div class="worktitle">WORK</div>
      <div class="parent">
-       <div class="box">
+       <div class="box" id="box1">
          <img src="images/brightboard.png" />
          <h3>Brightboard | Website Design</h3>
-         <a href="brightboard.html" class="btn">View Project</a>
+         <a href="brightboardindex.html" class="btn">View Project</a>
        </div>
-       <div class="box">
+       <div class="box" id="box2">
          <img src="images/brightboard.png" />
          <h3>Brightboard | Website Design</h3>
-         <a href="brightboard.html" class="btn">View Project</a>
+         <a href="brightboardindex.html" class="btn">View Project</a>
        </div>
-       <div class="box">
+       <div class="box" id="box3">
          <img src="images/brightboard.png" />
          <h3>Brightboard | Website Design</h3>
-         <a href="brightboard.html" class="btn">View Project</a>
+         <a href="brightboardindex.html" class="btn" id="here">View Project</a>
        </div>
+     </div>
+     <div class="centerbacktopbutton">
+       <a href="#" class="btn" id="buttonup">BACK TO TOP</a>
      </div>
    </section>
 
@@ -78,6 +84,16 @@
          <img class="logo" src="images/logoreversed.png" alt="Lacie Wilson" />
        </div>
    </div>
- </footer>
+ </footer>-->
+ <script src="js/jquery-3.2.1.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script>
+ $("#buttondown").click(function() {
+   $('html,body').animate({
+        scrollTop: $("#here").offset().top},
+        'slow');
+    });
+ </script>
+
 </body>
-</html>*/-->
+</html>
