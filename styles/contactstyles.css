@@ -42,10 +42,10 @@ p {
 }
 /* HEADER */
 header {
-  background: url('../images/designphoto1.png') top center no-repeat;
+  /*background: url('../images/designphoto1.png') top center no-repeat;*/
   background-size: cover;
   color: #FFF;
-  padding: 20px 100px;
+  padding: 20px 80px;
   height: 700px;
 }
 
@@ -71,21 +71,28 @@ header a {
   color: #000000;
 }
 
-.hero {
-  width: 45%;
+.contact {
+  width: 33%;
 }
 
-header .hero h1 {
+
+header .aboutme h1 {
   font-size: 48px;
   font-weight: bold;
-  padding-top: 30px;
+  margin-top: 10;
+  margin-bottom: 0;
 }
 
-header .hero h1 span.simple {
+header .aboutme h2 {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+header .aboutme h1 span.simple {
   color: #9B9B9B;
 }
 
-header .hero p {
+header .aboutme p {
   font-size: 22px;
   font-weight: 100;
   line-height: 26px;
@@ -102,97 +109,6 @@ header a.btn {
   text-align: center;
   text-decoration: none;
   width: 70px;
-}
-
-header .centerworkbutton {
-  text-align: center;
-}
-
-/* WORK */
-.worktitle {
-  text-align: center;
-  font-size: 28px;
-  padding-top: 20px;
-}
-
-.work .parent{
-  text-align: center;
-}
-
-#box1 {
-  float: left;
-}
-
-#box2 {
-    display: inline;
-}
-
-#box3 {
-  float: right;
-}
-
-.box {
-  background: #4ABDAC;
-  border: 1px solid #979797;
-  display: block;
-  /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.20);*/
-  float:left;
-  margin: 40px 40px;
-  height: 250px;
-  padding: 40px 40px;
-  position: relative;
-  width: 20%
-}
-
-.box:hover {
-  background: #FD7752;
-}
-
-.box h3 {
-  text-align: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  padding-top: -20px;
-}
-.box img {
-  display: block;
-  margin: auto;
-  padding-top: 30px;
-}
-
-.box a{
-  display: block;
-  margin: auto;
-}
-
-.box a.btn {
-  background: #000000;
-  border: 2px solid #FFFFFF;
-  border-radius: 1px;
-  color: #FFF;
-  font-weight: 700;
-  padding: 10px 30px;
-  text-align: center;
-  text-decoration: none;
-  width: 70px;
-}
-
-.work a.btn {
-  background: #FFF;
-  border: 2px solid #000;
-  border-radius: 1px;
-  color: #000;
-  font-weight: 700;
-  padding: 10px 30px;
-  text-align: center;
-  text-decoration: none;
-  width: 70px;
-}
-
-.centerbacktopbutton {
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 /* FOOTER */
