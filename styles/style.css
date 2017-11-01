@@ -108,7 +108,7 @@ header a.btn {
 .worktitle {
   text-align: center;
   font-size: 28px;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .parent {
@@ -135,7 +135,7 @@ header a.btn {
   background: #4ABDAC;
   border: 1px solid #979797;
   /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.20);*/
-  margin: 40px 20px;
+  margin: 30px 20px 20px 20px;
   height: 250px;
   padding: 40px 40px;
   width: 20%;
@@ -190,7 +190,7 @@ header a.btn {
 .centerbacktopbutton {
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 /* FOOTER */
