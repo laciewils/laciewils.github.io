@@ -42,7 +42,7 @@ p {
 }
 /* HEADER */
 header {
-  background: url('../images/designphoto1.png') top center no-repeat;
+  background: url('../images/designphoto1.png') 0px -10px no-repeat;
   background-size: cover;
   color: #FFF;
   padding: 20px 100px;
@@ -111,33 +111,34 @@ header a.btn {
   padding-top: 20px;
 }
 
-.work .parent{
+.parent {
   text-align: center;
 }
 
-#box1 {
-  float: left;
+.stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0
 }
 
-#box2 {
-    display: inline;
-}
-
+#box1,
+#box2,
 #box3 {
-  float: right;
+  vertical-align: top;
+  display: inline-block;
+  *display: inline;
+  zoom: 1
 }
 
 .box {
   background: #4ABDAC;
   border: 1px solid #979797;
-  display: block;
   /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.20);*/
-  float:left;
-  margin: 40px 40px;
+  margin: 40px 20px;
   height: 250px;
   padding: 40px 40px;
-  position: relative;
-  width: 20%
+  width: 20%;
 }
 
 .box:hover {
@@ -146,8 +147,8 @@ header a.btn {
 
 .box h3 {
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-top: 10px;
   padding-top: -20px;
 }
 .box img {
@@ -167,6 +168,7 @@ header a.btn {
   border-radius: 1px;
   color: #FFF;
   font-weight: 700;
+  font-size: 14px;
   padding: 10px 30px;
   text-align: center;
   text-decoration: none;
@@ -187,7 +189,7 @@ header a.btn {
 
 .centerbacktopbutton {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 40px;
 }
 
@@ -204,6 +206,7 @@ footer {
 
 .footer-nav-block {
   padding-left: 40px;
+  padding-top: 25px;
   text-align: center;
 }
 
@@ -211,15 +214,11 @@ footer .logo {
   float:left;
 }
 
-footer .nav {
-  float: right;
-}
-
 footer p,
 footer nav ul {
   font-size: 18px;
   font-weight: 100;
-  margin: 30px auto 10;
+
   text-align: center;
 }
 footer nav ul li {
