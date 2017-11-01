@@ -82,7 +82,7 @@ header .hero h1 {
 }
 
 header .hero h1 span.simple {
-  color: #9B9B9B;
+  color: #9DC183;
 }
 
 header .hero p {
@@ -102,10 +102,6 @@ header a.btn {
   text-align: center;
   text-decoration: none;
   width: 70px;
-}
-
-header .centerworkbutton {
-  text-align: center;
 }
 
 /* WORK */

@@ -9,60 +9,6 @@ body {
   min-height: 100%;
 }
 
-
-/* ===========================
-   ====== Contact Form =======
-   =========================== */
-form {
-  margin-bottom: 100px;
-}
-
-input, textarea {
-	padding: 10px;
-	border: 1px solid #E5E5E5;
-	width: 200px;
-	color: #999999;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
-	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
-}
-
-textarea {
-	width: 400px;
-	height: 150px;
-	max-width: 400px;
-	line-height: 18px;
-}
-
-input:hover, textarea:hover,
-input:focus, textarea:focus {
-	border-color: 1px solid #C9C9C9;
-	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
-	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
-}
-
-.form label {
-	margin-left: 10px;
-	color: #999999;
-}
-
-/* ===========================
-   ====== Submit Button ======
-   =========================== */
-
-.submit input {
-	width: 100px;
-	height: 40px;
-	background-color: #474E69;
-	color: #FFF;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-}
-
-
-
 h1
 {
   color: #000000;
@@ -97,7 +43,7 @@ p {
 }
 /* HEADER */
 header {
-  /*background: url('../images/designphoto1.png') top center no-repeat;*/
+  background: url('../images/connect.png') 0px 120px no-repeat;
   background-size: cover;
   color: #FFF;
   padding: 20px 100px;
@@ -145,7 +91,7 @@ header .contact h2 {
 }
 
 header .contact h1 span.simple {
-  color: #9B9B9B;
+  color: #9DC183;
 }
 
 header .contact p {
@@ -153,6 +99,19 @@ header .contact p {
   font-weight: 100;
   line-height: 26px;
   margin: 10px 0 40px;
+}
+
+.mailto {
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 1px;
+  color: #000;
+  font-weight: 700;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  width: 70px;
+  align-items: center;
 }
 
 header a.btn {
@@ -167,38 +126,16 @@ header a.btn {
   width: 70px;
 }
 
+.linkedin {
+  margin-left: 20px;
+}
+
 .contactwrapper {
   display: flex;
-}
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: #45a049;
-}
 
 /* Add a background color and some padding around the form */
 .container {
