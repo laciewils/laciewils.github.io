@@ -42,7 +42,7 @@ p {
 }
 /* HEADER */
 header {
-  /*background: url('../images/designphoto1.png') top center no-repeat;*/
+  background: url('../images/lacieaboutpic2.png') 0px 0px no-repeat;
   background-size: cover;
   color: #FFF;
   padding: 20px 100px;
@@ -117,10 +117,6 @@ header a.btn {
 
  .rw-wrapper{
 	width: 50%;
-	margin-left: 200px;
-	padding: 10px;
-  padding-top: 50px;
-
 }
 .rw-sentence{
 	margin: 0;

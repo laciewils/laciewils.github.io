@@ -1,0 +1,523 @@
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  color: #000;
+  font-family: 'Open Sans Condensed', Helvetica, Arial, serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans Condensed', Helvetica, Arial, serif;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+p {
+  font-size: 16px;
+}
+
+/* HEADER */
+header {
+  background: #4ABDAC;
+  color: #000;
+  padding: 20px 100px;
+  height: 1375px;
+  text-align: center;
+}
+
+.topheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.navigation li + li {
+  margin-left: 15px;
+}
+
+header a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.hero {
+  background: #4ABDAC;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.hero h1 {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  color: #000000;
+  font-weight: normal;
+  margin-bottom: 40px;
+  margin-top: -40px;
+}
+
+.hero .navigationbuttons {
+  margin-bottom: 40px;
+}
+header a.topbtn {
+  background: #000;
+  border: 2px solid #FFF;
+  border-radius: 1px;
+  color: #FFF;
+  font-weight: 700;
+  margin-bottom: 80px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  width: 70px;
+}
+
+.hero .brightboardlogo {
+  width: 200px;
+  margin-bottom: -30px;
+}
+
+.hero p {
+  font-family: 'Roboto Slab', Helvetica, Arial, serif;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+header a.btn {
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 1px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 80px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  width: 70px;
+}
+
+/* DELIVERABLES */
+.deliverables {
+  text-align: center;
+}
+
+.stretch {
+  display: inline-block;
+  font-size: 0;
+  line-height: 0
+}
+
+#box1,
+#box2,
+#box3 {
+  vertical-align: top;
+  display: inline-block;
+  *display: inline;
+  zoom: 1
+}
+
+.box {
+  padding-top: 20px;
+  width: 15%;
+}
+
+.box img {
+  margin-bottom: -20px;
+}
+
+.box h3 {
+  font-size: 24px;
+}
+
+.box li {
+  list-style: none;
+  text-align: center;
+}
+
+/* ABOUT */
+.overviewcontent {
+  display: flex;
+}
+
+.overviewtitle {
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.overviewtitle h2 {
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.overviewtext {
+  padding: 80px 80px 0px 80px;
+  text-align: left;
+  width: 500px;
+}
+
+.overviewtext h1 {
+  font-size: 36px;
+}
+
+.overviewtext h2 {
+  text-align: center;
+}
+
+.overviewtext p {
+  width: 500px;
+}
+
+.aboutbrightboard {
+  margin-bottom: 60px;
+}
+
+.challenge {
+  margin-bottom: 60px;
+}
+
+.homepagepicture {
+  margin: 40px 100px 0px 0px;
+}
+
+.brightboardhomepage {
+  box-shadow: 0 0 4px 3px rgba(0,0,0,0.10);
+}
+
+.divider {
+   display: block;
+   position: relative;
+   padding: 0;
+   margin: auto;
+   margin-bottom: 40px;
+   margin-top: 60px;
+   height: 0;
+   width: 80%;
+   max-height: 0;
+   font-size: 1px;
+   line-height: 0;
+   clear: both;
+   border: none;
+   border-top: 4px solid #4ABDAC;
+   border-bottom: 4px solid #4ABDAC;
+}
+
+.competitors {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 40%;
+}
+
+.competitorslogos {
+  display: flex;
+  margin: 0 auto;
+}
+
+.dropbox,
+.evernote,
+.pinterest {
+  width: 25%;
+  height: 25%;
+  margin-top: 10px;
+}
+
+.dropbox,
+.evernote {
+  margin-right: 40px;
+}
+
+.dropbox {
+  margin-left: 20px;
+}
+
+
+.usersurveys {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.usersurveys .explanation {
+  margin: 0 auto;
+  width: 40%;
+
+}
+
+.personas {
+  background: #4ABDAC;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  margin-top: 80px;
+}
+
+.personas:before {
+  background: inherit;
+  top: 0;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(2.5deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+
+
+.branding {
+  background: #fff;
+  color: #000;
+  margin-top: -100px;
+  padding-top: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.branding:before {
+  background: inherit;
+  top: 0;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(2.5deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+
+.stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0
+}
+
+#user1,
+#user2,
+#user3 {
+  vertical-align: top;
+  display: inline-block;
+  *display: inline;
+  zoom: 1
+}
+
+.user {
+  margin-bottom: 100px;
+  margin-top: 40px;
+  padding: 20px 20px;
+  width: 25%;
+}
+
+.user .name {
+  margin-bottom: -10px;
+}
+
+.user .job {
+    font-size: 18px;
+}
+
+.user h4 {
+  text-decoration: underline;
+  margin-bottom: 0px;
+}
+
+.user .quote {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* BRANDING */
+.brandingtitle h1 {
+  text-align: center;
+  margin: 40px 0px 40px 0px;
+}
+
+
+
+.logo {
+  align-items: center;
+  display: flex;
+}
+
+.logotext {
+  margin: 0px 60px 0px 40px;
+  text-align: left;
+  width: 40%;
+}
+
+.logotext h2 {
+  text-align: center;
+}
+
+.logoimages {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.logo1,
+.logo2 {
+  margin-right: 10px;
+}
+
+.colorpalette {
+  align-items: center;
+  display: flex;
+}
+
+.colorpalettetext {
+  margin: 0px 40px 0px 40px;
+  text-align: left;
+  width: 40%;
+}
+
+.colorpalettetext h2 {
+  text-align: center;
+}
+
+.colorpaletteimage {
+  margin: 0 auto;
+}
+
+.typography {
+  align-items: center;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.typographytext {
+  margin: 0px 60px 0px 40px;
+  text-align: left;
+  width: 40%;
+}
+
+.typographytext h2 {
+  text-align: center;
+}
+
+.typographycontent {
+  margin: 0 auto;
+}
+
+.typographycontent .montserrat {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+.typographycontent .robotoslab {
+  font-family: 'Roboto Slab', Helvetica, Arial, serif;
+}
+
+/* PROBLEM */
+.problem {
+  text-align: center;
+}
+
+.problem h1 {
+  padding-top: 40px;
+}
+
+/* PROCESS */
+.process {
+  text-align: center;
+}
+
+.wireframes a.btn {
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 1px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 80px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  width: 70px;
+}
+
+.mockups {
+  margin-bottom: 40px;
+}
+
+.mockups a.btn {
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 1px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 80px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  width: 70px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #000000;
+  color: #FFF;
+  height: 120px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+}
+
+.footer-nav-block {
+  padding-left: 40px;
+  padding-top: 25px;
+  text-align: center;
+}
+
+footer .logo {
+  float:left;
+}
+
+footer p,
+footer nav ul {
+  font-size: 18px;
+  font-weight: 100;
+
+  text-align: center;
+}
+footer nav ul li {
+  display: inline;
+  list-style-type: none;
+}
+
+footer nav ul li + li {
+  margin-left: 15px;
+}
+
+footer nav ul li a {
+  color: #FFF;
+  text-decoration: none;
+}
