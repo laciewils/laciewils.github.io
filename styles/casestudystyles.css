@@ -450,6 +450,15 @@ header a.btn {
   text-align: center;
 }
 
+.wireframes {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.wireframes p {
+  margin-bottom: 40px;
+}
+
 .wireframes a.btn {
   background: #FFFFFF;
   border: 2px solid #000000;
@@ -463,7 +472,23 @@ header a.btn {
   width: 70px;
 }
 
+.usertesting {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 40%;
+}
+
+.ussertesting p {
+  margin-bottom: 40px;
+}
+
 .mockups {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 40%;
+}
+
+.mockups p {
   margin-bottom: 40px;
 }
 
