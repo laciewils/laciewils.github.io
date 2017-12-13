@@ -119,8 +119,14 @@ header a.btn {
   width: 70px;
 }
 
+.hero .macbook {
+  margin-bottom: -60px;
+  width: 100%;
+}
+
 /* DELIVERABLES */
 .deliverables {
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -140,8 +146,7 @@ header a.btn {
 }
 
 .box {
-  padding-top: 20px;
-  width: 15%;
+  width: 20%;
 }
 
 .box img {
@@ -210,6 +215,7 @@ header a.btn {
 
 .brightboardhomepage {
   box-shadow: 0 0 4px 3px rgba(0,0,0,0.10);
+  width: 500px;
 }
 
 .divider {
@@ -230,6 +236,24 @@ header a.btn {
    border-bottom: 4px solid #4ABDAC;
 }
 
+.dividerblack {
+   display: block;
+   position: relative;
+   padding: 0;
+   margin: auto;
+   margin-bottom: 40px;
+   margin-top: 60px;
+   height: 0;
+   width: 90%;
+   max-height: 0;
+   font-size: 1px;
+   line-height: 0;
+   clear: both;
+   border: none;
+   border-top: 4px solid #000;
+
+}
+
 .wireframes {
   margin: 0 auto;
   text-align: center;
@@ -243,15 +267,17 @@ header a.btn {
 }
 
 .wireframeimages {
-  column-count: 2;
-  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 60px;
 }
 
 .wireframe1,
 .wireframe2,
 .wireframe3,
 .wireframe4 {
-  width: 50%;
+  max-width: 100%;
 }
 
 .wireframes a.btn {
@@ -274,9 +300,9 @@ header a.btn {
 }
 
 .usersurveyscontent {
-  margin-left: 160px;
-  text-align: left;
-  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
 }
 
 .competitorscontent {
@@ -445,6 +471,12 @@ header a.btn {
 
 .colorpaletteimage {
   margin: 0 auto;
+  width: 500px;
+}
+
+.colorpalettecontent {
+  margin: 0 auto;
+  width: 40%;
 }
 
 .typography {
@@ -489,21 +521,21 @@ header a.btn {
   width: 50%;
 }
 
-.preferenceimages img {
-  box-shadow: 0 0 4px 3px rgba(0,0,0,0.10);
-  margin: 0 auto;
-}
-
 .preferencetest1,
 .preferencetest2,
 .preferencetest3 {
+  margin: 0 auto;
   margin-bottom: 10px;
+  width: 600px;
 }
 
-.preferencetest2 img {
-  /*border: 5px solid green;*/
-  box-shadow: 0 0 4px 3px rgba(0, 255, 0, 0.6);
+.preferencetest1,
+.preferencetest3 {
+  box-shadow: 0 0 4px 3px rgba(0,0,0,0.10);
+}
 
+.preferencetest2 {
+  box-shadow: 0 0 4px 3px rgba(0, 255, 0, 0.6);
 }
 
 .mockups {
@@ -527,6 +559,27 @@ header a.btn {
   text-align: center;
   text-decoration: none;
   width: 70px;
+}
+
+.conclusioncontent {
+  display: flex;
+  align-items: center;
+}
+
+.conclusion h1 {
+  text-align: center;
+}
+
+.conclusion p,
+.conclusion h2
+ {
+  margin-bottom: 40px;
+  margin-left: 100px;
+  text-align: left;
+}
+
+.conclusion img {
+  width: 700px;
 }
 
 /* FOOTER */
