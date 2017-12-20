@@ -602,13 +602,15 @@ footer {
 }
 
 .footer-nav-block {
-  padding-left: 40px;
+
   padding-top: 25px;
   text-align: center;
 }
 
 footer .logo {
   float:left;
+  margin-left: 40px;
+  position: absolute;
 }
 
 footer nav {
@@ -619,6 +621,7 @@ footer p,
 footer nav ul {
   font-size: 18px;
   font-weight: 100;
+  padding: 0px;
   text-align: center;
 }
 footer nav ul li {
