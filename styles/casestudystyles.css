@@ -518,6 +518,7 @@ header a.btn {
 .usertesting p {
   margin: auto;
   margin-bottom: 40px;
+  margin-top: 20px;
   width: 50%;
 }
 
@@ -541,11 +542,16 @@ header a.btn {
 .mockups {
   margin: 0 auto;
   margin-bottom: 40px;
-  width: 40%;
+}
+
+.mockups h1 {
+  width: 100%;
 }
 
 .mockups p {
+  margin: 0 auto;
   margin-bottom: 40px;
+  width: 40%
 }
 
 .mockups a.btn {
@@ -581,6 +587,8 @@ header a.btn {
 .conclusion img {
   width: 700px;
 }
+
+
 
 /* FOOTER */
 footer {
