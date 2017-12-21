@@ -110,10 +110,10 @@ header a.topbtn {
 }
 
 .hero p {
-  font-family: 'Roboto Slab', Helvetica, Arial, serif;
+  font-family: 'Roboto', Helvetica, Arial, serif;
   width: 50%;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   margin-top: 10px;
 }
 
@@ -145,6 +145,11 @@ header a.btn {
   text-decoration: underline;
 }
 
+.deliverablesbold {
+  margin-bottom: 5px;
+  font-weight: 900;
+}
+
 .stretch {
   display: inline-block;
   font-size: 0;
@@ -173,7 +178,7 @@ header a.btn {
 }
 
 .box li {
-  font-family: "Raleway";
+  font-family: "Roboto";
   list-style: none;
   text-align: center;
 }
@@ -186,6 +191,7 @@ header a.btn {
 /* ABOUT */
 .overviewcontent {
   display: flex;
+  margin-top: -20px;
 }
 
 .overviewtitle {
@@ -226,7 +232,7 @@ header a.btn {
 }
 
 .homepagepicture {
-  margin: 40px 100px 0px 0px;
+  margin: 65px 100px 0px 0px;
 }
 
 .brightboardhomepage {
@@ -294,7 +300,7 @@ header a.btn {
 .usersurveys {
   text-align: center;
   margin-bottom: 40px;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .usersurveyscontent {
