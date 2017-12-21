@@ -3,6 +3,7 @@ body {
   overflow-x: hidden;
 }
 body {
+  background-color: #F5F5F5;
   color: #000;
   font-family: 'Open Sans Condensed', Helvetica, Arial, serif;
   margin: 0px;
@@ -189,6 +190,7 @@ header a.btn {
 }
 
 /* ABOUT */
+
 .overviewcontent {
   display: flex;
   margin-top: -20px;
@@ -335,6 +337,11 @@ header a.btn {
   width: 50%;
 }
 
+.dropbox {
+  margin-bottom: -100px;
+  margin-top: -70px;
+}
+
 .dropbox,
 .evernote,
 .pinterest {
@@ -394,7 +401,7 @@ header a.btn {
 
 /* BRANDING */
 .branding {
-  background: #fff;
+  background: #F5F5F5;
   color: #000;
   margin-top: -100px;
   padding-top: 20px;

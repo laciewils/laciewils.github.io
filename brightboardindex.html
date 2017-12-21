@@ -34,9 +34,11 @@
     <h1 class="casestudytitle">A Case Study</h1>
     <div class="navigationbuttons">
       <a href="#" class="topbtn" id="buttondownoverview">OVERVIEW</a>
+      <a href="#" class="topbtn" id="buttondownwireframes">WIREFRAMES</a>
       <a href="#" class="topbtn" id="buttondownusersurveys">RESEARCH</a>
       <a href="#" class="topbtn" id="buttondownbranding">BRANDING</a>
       <a href="#" class="topbtn" id="buttondownproblem">DESIGN PROCESS</a>
+      <a href="#" class="topbtn" id="buttondownconclusion">CONCLUSION</a>
     </div>
     <img src="images/brightboardlogo1.png" class="brightboardlogo" alt="Brightboard"/>
     <h1 class="brightboardtitle">Save. Share. Collaborate.</h1>
@@ -137,7 +139,7 @@
 <div class="divider">
 </div>
 <section class="wireframes">
-  <div class="wireframescontent">
+  <div class="wireframescontent" id="wireframeshere">
   <h1>Brightboard Site Map and Wireframes</h1>
   <p>I created a site map and wireframes in Sketch and uploaded them to invision to have an initial
     user flow and site navigation to base my further designs on. The sitemap and wireframes
@@ -172,7 +174,7 @@
   <div class="competitors">
     <div class="competitorscontent">
     <div class="competitorslogos">
-      <img src="images/dropbox-logo.png" class="dropbox" alt="Dropbox"/>
+      <img src="images/dropboxlogo.png" class="dropbox" alt="Dropbox"/>
       <img src="images/Evernote-logo.png" class="evernote" alt="Evernote"/>
       <img src="images/wordmark+badgeRGB.png" class="pinterest" alt="Pinterest"/>
     </div>
@@ -335,7 +337,7 @@
   </section>
   <div class="divider">
   </div>
-    <section class="conclusion">
+    <section class="conclusion" id="conclusionhere">
       <h1>Conclusion</h1>
       <div class="conclusioncontent">
       <div class="conclusiontext">
@@ -402,6 +404,12 @@ $("#buttondownusersurveys").click(function() {
       'slow');
   });
 
+  $("#buttondownwireframes").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#wireframeshere").offset().top},
+        'slow');
+    });
+
 $("#buttondownproblem").click(function() {
   $('html,body').animate({
       scrollTop: $("#processhere").offset().top},
@@ -413,6 +421,12 @@ $("#buttondownbranding").click(function() {
       scrollTop: $("#brandinghere").offset().top},
       'slow');
   });
+
+  $("#buttondownconclusion").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#conclusionhere").offset().top},
+        'slow');
+    });
 </script>
 
 </body>
