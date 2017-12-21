@@ -3,7 +3,7 @@ body {
   overflow-x: hidden;
 }
 body {
-  background-color: #F5F5F5;
+  background-color: #F8F8F8;
   color: #000;
   font-family: 'Open Sans Condensed', Helvetica, Arial, serif;
   margin: 0px;
@@ -401,7 +401,7 @@ header a.btn {
 
 /* BRANDING */
 .branding {
-  background: #F5F5F5;
+  background: #F8F8F8;
   color: #000;
   margin-top: -100px;
   padding-top: 20px;
