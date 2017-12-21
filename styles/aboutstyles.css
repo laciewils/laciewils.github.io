@@ -53,12 +53,17 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding-top: 20px;
+}
+
+.topheader img {
+  width: 100px;
 }
 
 .navigation ul {
   list-style: none;
   display: flex;
+  font-size: 22px;
   margin: 0;
 }
 
@@ -96,6 +101,7 @@ header .aboutme h1 span.simple {
 }
 
 header .aboutme p {
+  font-family: "Roboto";
   font-size: 16px;
   font-weight: 100;
   line-height: 26px;
@@ -201,6 +207,10 @@ footer .logo {
   float:left;
   margin-left: 40px;
   position: absolute;
+}
+
+footer .logoreversed {
+  width: 70px;
 }
 
 footer nav {

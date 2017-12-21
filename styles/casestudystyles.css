@@ -24,6 +24,7 @@ h2 {
   font-size: 28px;
 }
 p {
+  font-family: 'Roboto', Helvetica, Arial, serif;
   font-size: 20px;
 }
 
@@ -40,13 +41,18 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding-top: 20px;
   width: 100%;
+}
+
+.topheader img {
+  width: 100px;
 }
 
 .navigation ul {
   list-style: none;
   display: flex;
+  font-size: 22px;
   margin: 0;
 }
 
@@ -62,13 +68,17 @@ header a {
 .hero {
   background: #4ABDAC;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
-.hero h1 {
+.hero .casestudytitle {
+  margin-bottom: 30px;
+}
+
+.hero .brightboardtitle {
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   font-size: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .hero h2 {
@@ -81,13 +91,13 @@ header a {
 .hero .navigationbuttons {
   margin-bottom: 40px;
 }
+
 header a.topbtn {
   background: #000;
   border: 2px solid #FFF;
   border-radius: 1px;
   color: #FFF;
   font-weight: 700;
-  margin-bottom: 80px;
   padding: 10px 30px;
   text-align: center;
   text-decoration: none;
@@ -102,8 +112,9 @@ header a.topbtn {
 .hero p {
   font-family: 'Roboto Slab', Helvetica, Arial, serif;
   width: 50%;
-  margin: 0 auto;
+  margin: auto;
   margin-bottom: 40px;
+  margin-top: 10px;
 }
 
 header a.btn {
@@ -112,7 +123,6 @@ header a.btn {
   border-radius: 1px;
   color: #000;
   font-weight: 700;
-  margin-bottom: 80px;
   padding: 10px 30px;
   text-align: center;
   text-decoration: none;
@@ -121,6 +131,7 @@ header a.btn {
 
 .hero .macbook {
   margin-bottom: -60px;
+  margin-top: 10px;
   width: 100%;
 }
 
@@ -128,6 +139,10 @@ header a.btn {
 .deliverables {
   margin-bottom: 10px;
   text-align: center;
+}
+
+.deliverablescontent h3 {
+  text-decoration: underline;
 }
 
 .stretch {
@@ -158,6 +173,7 @@ header a.btn {
 }
 
 .box li {
+  font-family: "Raleway";
   list-style: none;
   text-align: center;
 }
@@ -234,24 +250,6 @@ header a.btn {
    border: none;
    border-top: 4px solid #4ABDAC;
    border-bottom: 4px solid #4ABDAC;
-}
-
-.dividerblack {
-   display: block;
-   position: relative;
-   padding: 0;
-   margin: auto;
-   margin-bottom: 40px;
-   margin-top: 60px;
-   height: 0;
-   width: 90%;
-   max-height: 0;
-   font-size: 1px;
-   line-height: 0;
-   clear: both;
-   border: none;
-   border-top: 4px solid #000;
-
 }
 
 .wireframes {
@@ -362,7 +360,33 @@ header a.btn {
   z-index: -1;
 }
 
+.user {
+  margin-bottom: 100px;
+  margin-top: 40px;
+  padding: 20px 20px;
+  width: 25%;
+}
 
+.user .name {
+  margin-bottom: -10px;
+}
+
+.user .job {
+    font-size: 18px;
+}
+
+.user h4 {
+  text-decoration: underline;
+  margin-bottom: 0px;
+}
+
+.user .quote {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* BRANDING */
 .branding {
   background: #fff;
   color: #000;
@@ -402,32 +426,6 @@ header a.btn {
   zoom: 1
 }
 
-.user {
-  margin-bottom: 100px;
-  margin-top: 40px;
-  padding: 20px 20px;
-  width: 25%;
-}
-
-.user .name {
-  margin-bottom: -10px;
-}
-
-.user .job {
-    font-size: 18px;
-}
-
-.user h4 {
-  text-decoration: underline;
-  margin-bottom: 0px;
-}
-
-.user .quote {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-/* BRANDING */
 .brandingtitle h1 {
   text-align: center;
   margin: 20px 0px 40px 0px;
@@ -440,7 +438,7 @@ header a.btn {
 }
 
 .logotext {
-  margin: 0px 60px 0px 40px;
+  margin: 0px 60px 0px 70px;
   text-align: left;
   width: 40%;
 }
@@ -449,12 +447,19 @@ header a.btn {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
   margin-top: 40px;
 }
 
 .logo1,
 .logo2 {
-  margin-right: 10px;
+  margin-right: 20px;
+}
+
+.logoimage1,
+.logoimage2,
+.logoimage3 {
+  width: 150px;
 }
 
 .colorpalette {
@@ -464,7 +469,7 @@ header a.btn {
 }
 
 .colorpalettetext {
-  margin: 0px 40px 0px 40px;
+  margin: 0px 40px 0px 70px;
   text-align: left;
   width: 40%;
 }
@@ -487,7 +492,7 @@ header a.btn {
 }
 
 .typographytext {
-  margin: 0px 60px 0px 40px;
+  margin: 0px 60px 0px 70px;
   text-align: left;
   width: 40%;
 }
@@ -510,6 +515,33 @@ header a.btn {
   text-align: center;
 }
 
+.mockups {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.mockups h1 {
+  width: 100%;
+}
+
+.mockups p {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 60%
+}
+
+.mockups a.btn {
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 1px;
+  color: #000;
+  font-weight: 700;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  width: 70px;
+}
+
 .usertesting {
   margin: 0 auto;
   margin-bottom: 40px;
@@ -518,8 +550,12 @@ header a.btn {
 .usertesting p {
   margin: auto;
   margin-bottom: 40px;
-  margin-top: 20px;
-  width: 50%;
+  margin-top: 40px;
+  width: 60%;
+}
+
+.preferenceimages {
+  margin-top: 50px;
 }
 
 .preferencetest1,
@@ -537,34 +573,6 @@ header a.btn {
 
 .preferencetest2 {
   box-shadow: 0 0 4px 3px rgba(0, 255, 0, 0.6);
-}
-
-.mockups {
-  margin: 0 auto;
-  margin-bottom: 40px;
-}
-
-.mockups h1 {
-  width: 100%;
-}
-
-.mockups p {
-  margin: 0 auto;
-  margin-bottom: 40px;
-  width: 40%
-}
-
-.mockups a.btn {
-  background: #FFFFFF;
-  border: 2px solid #000000;
-  border-radius: 1px;
-  color: #000;
-  font-weight: 700;
-  margin-bottom: 80px;
-  padding: 10px 30px;
-  text-align: center;
-  text-decoration: none;
-  width: 70px;
 }
 
 .conclusioncontent {
@@ -602,7 +610,6 @@ footer {
 }
 
 .footer-nav-block {
-
   padding-top: 25px;
   text-align: center;
 }
@@ -611,6 +618,10 @@ footer .logo {
   float:left;
   margin-left: 40px;
   position: absolute;
+}
+
+footer .logoreversed {
+  width: 70px;
 }
 
 footer nav {
