@@ -582,19 +582,23 @@ header a.btn {
 }
 
 .conclusioncontent {
-  display: flex;
   align-items: center;
+  display: flex;
+  margin: 0 auto;
+  width: 60%;
 }
 
 .conclusion h1 {
+  margin-bottom: 0px;
   text-align: center;
 }
 
-.conclusion p,
-.conclusion h2
- {
-  margin-bottom: 40px;
-  margin-left: 100px;
+.conclusion h2 {
+  text-align: center;
+}
+
+.conclusion p {
+  margin-bottom: 60px;
   text-align: left;
 }
 
