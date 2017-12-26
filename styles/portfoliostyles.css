@@ -136,7 +136,7 @@ header a {
 
 .centerbacktopbutton {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 60px;
   margin-bottom: 60px;
 }
 
@@ -190,4 +190,79 @@ footer nav ul li + li {
 footer nav ul li a {
   color: #FFF;
   text-decoration: none;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+
+  header {
+    padding: 20px 40px;
+    padding-bottom: 60px;
+  }
+
+  .navigation ul {
+    font-size: 18px;
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width:620px) {
+  /* For mobile phones: */
+  .hamburger {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width:768px) {
+
+
+
+}
+
+@media only screen and (min-width:768px) {
+
+  .aboutcontent {
+    width:70%;
+  }
+
+}
+
+@media only screen and (max-width:1024px) {
+
+  .box {
+    display: inline-block;
+    height: 100%;
+    padding-top: 40px;
+  }
+
+
+  footer nav ul {
+    font-size: 16px;
+  }
+
+  footer {
+    padding-bottom: 40px;
+  }
+
+  footer .logo {
+    float:left;
+    margin: 0px;
+    padding-bottom: 10px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+
+  .footernav {
+    clear: both;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  header .hero p.description {
+    width:50%;
+  }
+
 }
