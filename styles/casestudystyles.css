@@ -31,7 +31,7 @@ p {
 
 /* HEADER */
 header {
-  background: #4ABDAC;
+  background: #DADADA;
   color: #000;
   padding: 20px 100px;
   height: 100%;
@@ -67,19 +67,20 @@ header a {
 }
 
 .hero {
-  background: #4ABDAC;
   width: 100%;
   margin-top: 20px;
 }
 
-.hero .casestudytitle {
-  margin-bottom: 30px;
+.hero .brightboardlogo {
+  width: 300px;
+  margin-bottom: 0px;
 }
 
-.hero .brightboardtitle {
+.hero .brightboardslogan {
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-  font-size: 50px;
-  margin-bottom: 0px;
+  font-size: 38px;
+  margin-bottom: 40px;
+  margin-top: 0px;
 }
 
 .hero h2 {
@@ -89,25 +90,19 @@ header a {
   margin-top: -40px;
 }
 
-.hero .navigationbuttons {
-  margin-bottom: 40px;
+.hero .navbuttons {
+  align-items: center;
+  display: flex;
 }
 
 header a.topbtn {
-  background: #000;
-  border: 2px solid #FFF;
-  border-radius: 1px;
-  color: #FFF;
+  color: #000;
   font-weight: 700;
-  padding: 10px 30px;
+  padding: 60px 30px;
+  padding-top: 5px;
   text-align: center;
-  text-decoration: none;
+  text-decoration: underline;
   width: 70px;
-}
-
-.hero .brightboardlogo {
-  width: 200px;
-  margin-bottom: -30px;
 }
 
 .hero p {
@@ -118,11 +113,10 @@ header a.topbtn {
   margin-top: 10px;
 }
 
-header a.btn {
-  background: #FFFFFF;
-  border: 2px solid #000000;
+.hero a.btn {
+  background: #000;
   border-radius: 1px;
-  color: #000;
+  color: #FFF;
   font-weight: 700;
   padding: 10px 30px;
   text-align: center;
@@ -130,20 +124,73 @@ header a.btn {
   width: 70px;
 }
 
+.viewbrightboardbutton {
+  margin: 0 auto;
+}
+
+.dropbtn {
+    background: #000;
+    border-radius: 1px;
+    color: #FFF;
+    cursor: pointer;
+    font-family: "Open Sans Condensed";
+    font-size: 16px;
+    font-weight: 700;
+    min-width: 125px;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    width: 70px;
+}
+
+.dropdown {
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 125px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #000;
+    color: #fff;
+}
+
 .hero .macbook {
-  margin-bottom: -60px;
-  margin-top: 10px;
+  margin-bottom: -20px;
+  margin-top: -5px;
   width: 100%;
 }
 
 /* DELIVERABLES */
 .deliverables {
-  margin-bottom: 10px;
+  background-color: #000;
+  color: #fff;
+  padding: 40px;
   text-align: center;
 }
 
-.deliverablescontent h3 {
-  text-decoration: underline;
+.deliverablescontent h2 {
 }
 
 .deliverablesbold {
@@ -170,12 +217,26 @@ header a.btn {
   width: 20%;
 }
 
-.box img {
-  margin-bottom: -20px;
+.boxdivider {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 0;
+  width: 25%;
+  max-height: 0;
+  font-size: 1px;
+  line-height: 0;
+  clear: both;
+  border: none;
+  border-top: 3px solid #FFF;
+  border-bottom: 3px solid #FFF;
 }
 
-.box h3 {
-  font-size: 24px;
+.box img {
+  margin-bottom: -20px;
 }
 
 .box li {
@@ -193,18 +254,9 @@ header a.btn {
 
 .overviewcontent {
   display: flex;
-  margin-top: -20px;
-}
+  margin-bottom: 40px;
+  margin-top: 20px;
 
-.overviewtitle {
-  text-align: center;
-  margin: auto;
-  margin-top: 40px;
-}
-
-.overviewtitle h2 {
-  font-size: 28px;
-  font-weight: normal;
 }
 
 .overviewtext {
@@ -215,14 +267,38 @@ header a.btn {
 
 .overviewtext h1 {
   font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .overviewtext h2 {
+  margin-bottom: 0px;
+  margin-top: 0px;
   text-align: left;
 }
 
 .overviewtext p {
+  line-height: 1.5;
   width: 500px;
+}
+
+.overviewdivider {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 0;
+  width: 25%;
+  max-height: 0;
+  font-size: 1px;
+  line-height: 0;
+  clear: both;
+  border: none;
+  border-top: 3px solid #4ABDAC;
+  border-bottom: 3px solid #4ABDAC;
 }
 
 .aboutbrightboard {
@@ -242,77 +318,42 @@ header a.btn {
   width: 500px;
 }
 
-.divider {
-   display: block;
-   position: relative;
-   padding: 0;
-   margin: auto;
-   margin-bottom: 40px;
-   margin-top: 60px;
-   height: 0;
-   width: 100%;
-   max-height: 0;
-   font-size: 1px;
-   line-height: 0;
-   clear: both;
-   border: none;
-   border-top: 4px solid #4ABDAC;
-   border-bottom: 4px solid #4ABDAC;
-}
-
-.wireframes {
-  margin: 0 auto;
-  text-align: center;
-  width: 90%;
-}
-
-.wireframes p {
-  margin: auto;
-  margin-bottom: 40px;
-  width: 50%;
-}
-
-.wireframeimages {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-  margin-bottom: 60px;
-}
-
-.wireframe1,
-.wireframe2,
-.wireframe3,
-.wireframe4 {
-  max-width: 100%;
-}
-
-.wireframes a.btn {
-  background: #FFFFFF;
-  border: 2px solid #000000;
-  border-radius: 1px;
-  color: #000;
-  font-weight: 700;
-  margin-bottom: 80px;
-  padding: 10px 30px;
-  text-align: center;
-  text-decoration: none;
-  width: 70px;
+.usersurveys:before {
+  background: inherit;
+  top: 0;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(2.5deg);
+  transform-origin: 100%;
+  z-index: -1;
 }
 
 .usersurveys {
+  background-color: #000;
+  color: #fff;
   text-align: center;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  padding-top: 20px;
+  background: #000;
+  position: relative;
+  z-index: 1;
+  margin-top: 80px;
 }
 
 .usersurveyscontent {
-  margin: 0 auto;
-  text-align: center;
+  line-height: 1.5;
+  margin-left: 80px;
+  text-align: left;
   width: 60%;
 }
 
 .competitorscontent {
   display: flex;
+  line-height: 1.5;
+  padding-bottom: 60px;
 }
 
 .competitors {
@@ -324,8 +365,9 @@ header a.btn {
 }
 
 .competitorstext {
+  margin-right: 80px;
   text-align: left;
-  width: 40%;
+  width: 60%;
 }
 
 .competitorslogos {
@@ -357,6 +399,7 @@ header a.btn {
   position: relative;
   z-index: 1;
   margin-top: 80px;
+  padding-bottom: 60px;
 }
 
 .personas:before {
@@ -444,25 +487,25 @@ header a.btn {
   margin: 20px 0px 40px 0px;
 }
 
-.logo {
-  align-items: center;
+.brandingcontent {
   display: flex;
-  text-align: left;
+  width: 100%;
+}
+
+.brandingtext {
+  width: 40%;
+}
+
+.brandingimages {
+  display:inline-block;
 }
 
 .logotext {
   margin: 0px 60px 0px 70px;
   text-align: left;
-  width: 40%;
 }
 
-.logoimages {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  margin-top: 40px;
-}
+
 
 .logo1,
 .logo2 {
@@ -475,16 +518,9 @@ header a.btn {
   width: 150px;
 }
 
-.colorpalette {
-  align-items: center;
-  display: flex;
-  text-align: left;
-}
-
 .colorpalettetext {
   margin: 0px 40px 0px 70px;
   text-align: left;
-  width: 40%;
 }
 
 .colorpaletteimage {
@@ -494,20 +530,11 @@ header a.btn {
 
 .colorpalettecontent {
   margin: 0 auto;
-  width: 40%;
-}
-
-.typography {
-  align-items: center;
-  display: flex;
-  margin-bottom: 40px;
-  text-align: left;
 }
 
 .typographytext {
   margin: 0px 60px 0px 70px;
   text-align: left;
-  width: 40%;
 }
 
 .typographycontent {
@@ -522,6 +549,60 @@ header a.btn {
 .typographycontent .robotoslab {
   font-family: 'Roboto Slab', Helvetica, Arial, serif;
 }
+
+.wireframes {
+  background-color: #000;
+  color: #FFF;
+  margin: auto;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.wireframescontent {
+  padding-top: 20px;
+}
+
+.wireframesbutton {
+  padding-bottom: 60px;
+  padding-top: 20px;
+}
+
+.wireframes p {
+  margin: auto;
+  margin-bottom: 40px;
+  width: 50%;
+}
+
+.wireframeimages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin: auto;
+  margin-bottom: 60px;
+  width: 90%;
+}
+
+.wireframe1,
+.wireframe2,
+.wireframe3,
+.wireframe4 {
+  max-width: 100%;
+}
+
+.wireframes a.btn {
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 1px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 80px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  width: 70px;
+}
+
 
 /* PROCESS */
 .process {
@@ -576,7 +657,7 @@ header a.btn {
 .preferencetest3 {
   margin: 0 auto;
   margin-bottom: 10px;
-  width: 600px;
+  width: 80%;
 }
 
 .preferencetest1,
@@ -586,6 +667,30 @@ header a.btn {
 
 .preferencetest2 {
   box-shadow: 0 0 4px 3px rgba(0, 255, 0, 0.6);
+}
+
+.preftestdivider {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 0;
+  width: 25%;
+  max-height: 0;
+  font-size: 1px;
+  line-height: 0;
+  clear: both;
+  border: none;
+  border-top: 3px solid #4ABDAC;
+  border-bottom: 3px solid #4ABDAC;
+}
+
+.conclusion {
+  background-color: #000;
+  color: #fff;
+  padding: 40px;
 }
 
 .conclusioncontent {
@@ -613,7 +718,100 @@ header a.btn {
   width: 700px;
 }
 
+/* WORK */
+.work {
+  padding: 40px 0px 20px 0px;
+}
 
+.worktitle {
+  text-align: center;
+  font-size: 28px;
+}
+
+.parent {
+  text-align: center;
+}
+
+.stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0
+}
+
+ #box1,
+ #box2,
+ #box3 {
+  vertical-align: top;
+  display: inline-block;
+  *display: inline;
+  zoom: 1
+}
+
+.work .box {
+  background: #4ABDAC;
+  border: 1px solid #979797;
+  /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.20);*/
+  margin: 30px 20px 20px 20px;
+  height: 250px;
+  padding: 40px 40px;
+  width: 20%;
+}
+
+.work .box:hover {
+  background: #FD7752;
+}
+
+.work .box h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  padding-top: -20px;
+}
+
+.work .box img {
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 0px;
+  width: 100px;
+}
+
+.work .box a{
+  display: block;
+  margin: auto;
+}
+
+.work .box a.btn {
+  background: #000000;
+  border: 2px solid #FFFFFF;
+  border-radius: 1px;
+  color: #FFF;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  width: 70px;
+}
+
+.work a.btn {
+  background: #FFF;
+  border: 2px solid #000;
+  border-radius: 1px;
+  color: #000;
+  font-weight: 700;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  width: 70px;
+}
+
+.centerbacktopbutton {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
 
 /* FOOTER */
 footer {

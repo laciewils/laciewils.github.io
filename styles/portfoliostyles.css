@@ -75,75 +75,51 @@ header a {
 
 /* WORK */
 .worktitle {
-  text-align: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
   font-size: 28px;
-}
-
-.parent {
+  padding-bottom: 30px;
+  padding-top: 30px;
   text-align: center;
-}
-
-.stretch {
-  width: 100%;
-  display: inline-block;
-  font-size: 0;
-  line-height: 0
-}
-
-#box1,
-#box2,
-#box3 {
-  vertical-align: top;
-  display: inline-block;
-  *display: inline;
-  zoom: 1
 }
 
 .box {
-  background: #4ABDAC;
-  border: 1px solid #979797;
+  align-items: center;
+  background-color: rgba(0,0,0,.50);
+  display: flex;
   /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.20);*/
-  margin: 30px 20px 20px 20px;
-  height: 250px;
-  padding: 40px 40px;
-  width: 20%;
+  height: 350px;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
 }
 
 .box:hover {
-  background: #FD7752;
+  background: #4ABDAC;
 }
 
-.box h3 {
-  text-align: center;
-  margin-bottom: 30px;
-  margin-top: 10px;
-  padding-top: -20px;
+#box1 h1 {
+  color: #fff;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  margin-top: 0px;
 }
 
-.box img {
+.box .brightboardlogo {
   display: block;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   padding: 0px;
-  width: 100px;
+  width: 200px;
+}
+
+.box .macbook {
+  width: 500px;
 }
 
 .box a{
   display: block;
   margin: auto;
-}
-
-.box a.btn {
-  background: #000000;
-  border: 2px solid #FFFFFF;
-  border-radius: 1px;
-  color: #FFF;
-  font-weight: 700;
-  font-size: 14px;
-  padding: 10px 30px;
-  text-align: center;
-  text-decoration: none;
-  width: 70px;
 }
 
 .work a.btn {
@@ -155,7 +131,7 @@ header a {
   padding: 10px 30px;
   text-align: center;
   text-decoration: none;
-  width: 70px;
+  width: 100px;
 }
 
 .centerbacktopbutton {
