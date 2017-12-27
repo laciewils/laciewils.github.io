@@ -253,16 +253,15 @@ header a.topbtn {
 /* ABOUT */
 
 .overviewcontent {
-  display: flex;
   margin-bottom: 40px;
   margin-top: 20px;
-
+  width: 100%;
 }
 
 .overviewtext {
   padding: 40px 80px 0px 80px;
   text-align: left;
-  width: 500px;
+  width: 50%;
 }
 
 .overviewtext h1 {
@@ -280,7 +279,7 @@ header a.topbtn {
 
 .overviewtext p {
   line-height: 1.5;
-  width: 500px;
+  width: 100%;
 }
 
 .overviewdivider {
@@ -309,13 +308,15 @@ header a.topbtn {
   margin-bottom: 60px;
 }
 
-.homepagepicture {
-  margin: 65px 100px 0px 0px;
-}
-
 .brightboardhomepage {
   box-shadow: 0 0 4px 3px rgba(0,0,0,0.10);
   width: 500px;
+}
+
+.homepagepicture {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
 }
 
 .usersurveys:before {
@@ -371,12 +372,26 @@ header a.topbtn {
 }
 
 .competitorslogos {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   margin-top: 20px;
-  width: 50%;
+}
+
+.competitorslogos .stretch {
+  display: inline-block;
+  font-size: 0;
+  line-height: 0
+}
+
+.competitorslogos #box1,
+.competitorslogos #box2,
+.competitorslogos #box3 {
+  vertical-align: top;
+  display: inline-block;
+  *display: inline;
+  zoom: 1
+}
+
+.box {
+  width: 40%;
 }
 
 .dropbox {
@@ -862,4 +877,114 @@ footer nav ul li + li {
 footer nav ul li a {
   color: #FFF;
   text-decoration: none;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+
+  header {
+    height: 400px;
+    padding: 20px 40px;
+    padding-bottom: 60px;
+  }
+
+  .navigation ul {
+    display: none;
+  }
+
+  .hero .brightboardlogo {
+    width: 50%;
+  }
+  .hero .brightboardslogan {
+    font-size: 32px;
+  }
+  .viewbrightboardbutton,
+  .dropbtn
+   {
+     width: 20px;
+  }
+
+  header {
+    height: 100%;
+  }
+
+  .brightboardhomepage {
+    width: 300px;
+  }
+
+  .overviewtext {
+    margin: 0 auto;
+    padding: 0px;
+  }
+
+  .overviewtext p {
+    font-size: 16px;
+  }
+
+
+}
+
+@media only screen and (min-width:620px) {
+  /* For mobile phones: */
+  .hamburger {
+    display: none;
+  }
+
+  footer nav ul {
+    font-size: 16px;
+  }
+
+  footer {
+    padding-bottom: 40px;
+  }
+
+  footer .logo {
+    float:left;
+    margin: 0px;
+    padding-bottom: 10px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+
+  .footernav {
+    clear: both;
+  }
+
+}
+
+@media only screen and (max-width:768px) {
+
+  .deliverables .box {
+    width: 100%;
+  }
+
+  .overviewtext {
+    width: 80%;
+  }
+
+}
+
+@media only screen and (min-width:768px) {
+
+  .overviewtext {
+    width: 70%;
+  }
+
+}
+
+@media only screen and (max-width:1024px) {
+
+  .homepagepicture {
+    .width: 50%;
+  }
+
+
+}
+
+@media only screen and (min-width:1024px) {
+  .overviewtext {
+    width: 60%;
+  }
+
 }
