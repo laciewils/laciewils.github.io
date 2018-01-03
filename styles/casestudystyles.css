@@ -336,9 +336,7 @@ header a.topbtn {
 .usersurveys {
   background-color: #000;
   color: #fff;
-  text-align: center;
   padding-top: 20px;
-  background: #000;
   position: relative;
   z-index: 1;
   margin-top: 80px;
@@ -346,29 +344,23 @@ header a.topbtn {
 
 .usersurveyscontent {
   line-height: 1.5;
-  margin-left: 80px;
+  margin: auto;
   text-align: left;
-  width: 60%;
+  width: 70%;
 }
 
-.competitorscontent {
-  display: flex;
+.competitorstext {
+  height: 450px;
   line-height: 1.5;
+  margin: auto;
+  margin-right: 0px;
   padding-bottom: 60px;
-}
-
-.competitors {
-  margin-top: 60px;
+  text-align: left;
+  width: 70%;
 }
 
 .competitorstitle {
   text-align: left;
-}
-
-.competitorstext {
-  margin-right: 80px;
-  text-align: left;
-  width: 60%;
 }
 
 .competitorslogos {
@@ -390,22 +382,24 @@ header a.topbtn {
   zoom: 1
 }
 
-.box {
-  width: 40%;
+.competitorslogos #box1,
+.competitorslogos #box2 {
+  margin-right: 40px;
 }
 
-.dropbox {
-  margin-bottom: -100px;
-  margin-top: -70px;
+.competitorlogos .box {
+  width: 33%;
 }
 
 .dropbox,
 .evernote,
 .pinterest {
-  width: 50%;
+  width: 100%;
 }
-.pinterest {
-  margin-top: 20px;
+
+.research {
+  margin: auto;
+  text-align: center;
 }
 
 .personas {
@@ -415,6 +409,7 @@ header a.topbtn {
   z-index: 1;
   margin-top: 80px;
   padding-bottom: 60px;
+  text-align: center;
 }
 
 .personas:before {
@@ -443,12 +438,20 @@ header a.topbtn {
 }
 
 .user .job {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .user h4 {
   text-decoration: underline;
   margin-bottom: 0px;
+}
+
+.user ul {
+  font-family: "Roboto";
+  font-size: 18px;
+  margin: auto;
+  padding: 0px;
+  text-align: left;
 }
 
 .user .quote {
@@ -457,9 +460,25 @@ header a.topbtn {
   font-weight: bold;
 }
 
+.stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0
+}
+
+#user1,
+#user2,
+#user3 {
+  vertical-align: top;
+  display: inline-block;
+  *display: inline;
+  zoom: 1
+}
+
 /* BRANDING */
 .branding {
-  background: #F8F8F8;
+  background: #fff;
   color: #000;
   margin-top: -100px;
   padding-top: 20px;
@@ -481,88 +500,78 @@ header a.topbtn {
   z-index: -1;
 }
 
-.stretch {
-  width: 100%;
-  display: inline-block;
-  font-size: 0;
-  line-height: 0
+.brandingbox {
+  border: 4px solid black;
+  color: #000;
+  height: 100%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  width: 900px;
 }
 
-#user1,
-#user2,
-#user3 {
-  vertical-align: top;
-  display: inline-block;
-  *display: inline;
-  zoom: 1
+.brandingexplanation {
+  margin: auto;
+  width: 70%;
 }
 
-.brandingtitle h1 {
-  text-align: center;
-  margin: 20px 0px 40px 0px;
-}
-
-.brandingcontent {
+.brandinglogos {
+  align-items: center;
   display: flex;
-  width: 100%;
+  justify-content: center;
+  margin-top: 40px;
 }
 
-.brandingtext {
-  width: 40%;
+.logo1 {
+  width: 230px;
 }
-
-.brandingimages {
-  display:inline-block;
+.logo2,
+.logo3 {
+  width: 130px;
 }
-
-.logotext {
-  margin: 0px 60px 0px 70px;
-  text-align: left;
-}
-
-
 
 .logo1,
 .logo2 {
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
-.logoimage1,
-.logoimage2,
-.logoimage3 {
-  width: 150px;
+.brandingcolorpalette {
+  margin-top: 40px;
+  text-align: center;
 }
 
-.colorpalettetext {
-  margin: 0px 40px 0px 70px;
-  text-align: left;
+.palette {
+  width: 600px;
 }
 
-.colorpaletteimage {
-  margin: 0 auto;
-  width: 500px;
+.brandingtypography {
+  text-align: center;
 }
 
-.colorpalettecontent {
-  margin: 0 auto;
+.brandingtypographyheadlines h2,
+.brandingtypographyheadlines p {
+  font-family: "Montserrat";
 }
 
-.typographytext {
-  margin: 0px 60px 0px 70px;
-  text-align: left;
+.brandingtypographyheadlines h2 {
+  margin-bottom: 0px;
 }
 
-.typographycontent {
-  margin: 0 auto;
+.brandingtypographyheadlines p {
+  margin-top: 0px;
 }
 
-.typographycontent .montserrat {
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-  font-weight: normal;
+.brandingtypographyparagraphs h2,
+.brandingtypographyparagraphs p {
+  font-family: "Roboto Slab";
 }
 
-.typographycontent .robotoslab {
-  font-family: 'Roboto Slab', Helvetica, Arial, serif;
+.brandingtypographyparagraphs h2 {
+  margin-bottom: 0px;
+}
+
+.brandingtypographyparagraphs p {
+  margin-top: 0px;
 }
 
 .wireframes {
@@ -590,9 +599,7 @@ header a.topbtn {
 }
 
 .wireframeimages {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+
   margin: auto;
   margin-bottom: 60px;
   width: 90%;
@@ -734,80 +741,52 @@ header a.topbtn {
 }
 
 /* WORK */
-.work {
-  padding: 40px 0px 20px 0px;
-}
-
 .worktitle {
-  text-align: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
   font-size: 28px;
-}
-
-.parent {
+  padding-bottom: 30px;
+  padding-top: 30px;
   text-align: center;
 }
 
-.stretch {
-  width: 100%;
-  display: inline-block;
-  font-size: 0;
-  line-height: 0
-}
-
- #box1,
- #box2,
- #box3 {
-  vertical-align: top;
-  display: inline-block;
-  *display: inline;
-  zoom: 1
-}
-
-.work .box {
-  background: #4ABDAC;
-  border: 1px solid #979797;
+.work .workbox {
+  align-items: center;
+  background-color: rgba(0,0,0,.50);
+  display: flex;
   /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.20);*/
-  margin: 30px 20px 20px 20px;
-  height: 250px;
-  padding: 40px 40px;
-  width: 20%;
-}
-
-.work .box:hover {
-  background: #FD7752;
-}
-
-.work .box h3 {
+  height: 350px;
+  justify-content: center;
   text-align: center;
-  margin-bottom: 30px;
-  margin-top: 10px;
-  padding-top: -20px;
+  width: 100%;
 }
 
-.work .box img {
+.work .workbox:hover {
+  background: #4ABDAC;
+}
+
+.work #workbox1 h1 {
+  color: #fff;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  margin-top: 0px;
+}
+
+.work .workbox .brightboardlogo {
   display: block;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   padding: 0px;
-  width: 100px;
+  width: 200px;
 }
 
-.work .box a{
+.work .workbox .macbook {
+  width: 500px;
+}
+
+.work .workbox a{
   display: block;
   margin: auto;
-}
-
-.work .box a.btn {
-  background: #000000;
-  border: 2px solid #FFFFFF;
-  border-radius: 1px;
-  color: #FFF;
-  font-weight: 700;
-  font-size: 14px;
-  padding: 10px 30px;
-  text-align: center;
-  text-decoration: none;
-  width: 70px;
 }
 
 .work a.btn {
@@ -819,12 +798,12 @@ header a.topbtn {
   padding: 10px 30px;
   text-align: center;
   text-decoration: none;
-  width: 70px;
+  width: 100px;
 }
 
 .centerbacktopbutton {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 60px;
   margin-bottom: 60px;
 }
 
@@ -879,6 +858,12 @@ footer nav ul li a {
   text-decoration: none;
 }
 
+@media only screen and (min-width:320px) {
+  .palette {
+    width: 250px;
+  }
+}
+
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
 
@@ -921,6 +906,41 @@ footer nav ul li a {
     font-size: 16px;
   }
 
+  .usersurveyscontent p,
+  .competitorstext p {
+    font-size: 18px;
+  }
+
+  .logo1 {
+    width: 100px;
+  }
+  .logo2,
+  .logo3 {
+    width: 60px;
+  }
+
+  .brandingtypographyheadlines h2,
+  .brandingtypographyparagraphs h2 {
+    font-size: 18px;
+  }
+  .brandingtypographyheadlines p,
+  .brandingtypographyparagraphs p {
+    font-size: 14px;
+  }
+
+  .conclusioncontent {
+    width: 100%;
+  }
+
+  .conclusiontext p {
+    font-size: 18px;
+  }
+
+  .work .boximage .macbook {
+    width: 100%;
+  }
+
+
 
 }
 
@@ -928,6 +948,10 @@ footer nav ul li a {
   /* For mobile phones: */
   .hamburger {
     display: none;
+  }
+
+  .palette {
+    width: 350px;
   }
 
   footer nav ul {
@@ -963,12 +987,47 @@ footer nav ul li a {
     width: 80%;
   }
 
+  .usersurveyscontent {
+    width: 80%;
+  }
+  .competitorscontent {
+    width: 90%;
+  }
+
+  .logo1 {
+    width: 100px;
+  }
+  .logo2,
+  .logo3 {
+    width: 60px;
+  }
+
+
+
 }
 
 @media only screen and (min-width:768px) {
 
   .overviewtext {
     width: 70%;
+  }
+  .usersurveyscontent {
+    width: 80%;
+  }
+  .competitorscontent {
+    width: 90%;
+  }
+
+  .logo1 {
+    width: 175px;
+  }
+  .logo2,
+  .logo3 {
+    width: 125px;
+  }
+
+  .palette {
+    width: 400px;
   }
 
 }
@@ -979,12 +1038,69 @@ footer nav ul li a {
     .width: 50%;
   }
 
+  .conclusioncontent {
+    width: 90%;
+  }
+
+  .wireframescontent p {
+    width: 80%;
+  }
+
+  .work .workbox {
+    display: inline-block;
+    height: 100%;
+    padding-top: 40px;
+  }
+
+  .mockups p {
+    width: 80%;
+  }
+
+  .usertesting p {
+    width: 80%;
+  }
+
+  .personas .user {
+    width: 80%;
+  }
+
+  .brandingbox {
+    width: 80%;
+  }
+
 
 }
 
 @media only screen and (min-width:1024px) {
   .overviewtext {
     width: 60%;
+  }
+  .usersurveyscontent {
+    width: 50%;
+  }
+  .competitorscontent {
+    width: 60%;
+  }
+
+  .wireframeimages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin: auto;
+    margin-bottom: 60px;
+    width: 90%;
+  }
+
+  .logo1 {
+    width: 200px;
+  }
+  .logo2,
+  .logo3 {
+    width: 150px;
+  }
+
+  .palette {
+    width: 500px;
   }
 
 }
