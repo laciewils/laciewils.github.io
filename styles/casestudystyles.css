@@ -647,14 +647,13 @@ header a.topbtn {
 
 .wireframes p {
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   width: 50%;
 }
 
 .wireframeimages {
-
   margin: auto;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   width: 90%;
 }
 
@@ -700,10 +699,10 @@ header a.topbtn {
 }
 
 .mockups a.btn {
-  background: #FFFFFF;
+  background: #000;
   border: 2px solid #000000;
   border-radius: 1px;
-  color: #000;
+  color: #fff;
   font-weight: 700;
   padding: 10px 30px;
   text-align: center;
@@ -847,6 +846,18 @@ header a.topbtn {
   border: 2px solid #000;
   border-radius: 1px;
   color: #000;
+  font-weight: 700;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+}
+
+.centerbacktopbutton a.btn {
+  background: #000;
+  border: 2px solid #000;
+  border-radius: 1px;
+  color: #fff;
   font-weight: 700;
   padding: 10px 30px;
   text-align: center;

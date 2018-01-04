@@ -143,6 +143,10 @@ header .aboutme h1 span.simple {
   color: #9DC183;
 }
 
+header .aboutitalic {
+  font-style: italic;
+}
+
 header .aboutme p {
   font-family: "Roboto";
   font-size: 18px;
@@ -168,6 +172,7 @@ header a.btn {
 }
 .rw-sentence{
 	margin: 0;
+  margin-bottom: 40px;
 	text-align: left;
 }
 .rw-sentence span{
@@ -290,12 +295,7 @@ footer nav ul li a {
   text-decoration: none;
 }
 
-@media only screen and (max-width:400px) {
-  /* For mobile phones: */
-  .btn {
-    font-size: 14px;
-  }
-}
+
 
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
@@ -332,6 +332,14 @@ footer nav ul li a {
 
   .navigation {
     display: none;
+  }
+
+  header .aboutme p {
+    margin-bottom: 0px;
+  }
+
+  .aboutpicture {
+    margin-top: -20px;
   }
 
 }
