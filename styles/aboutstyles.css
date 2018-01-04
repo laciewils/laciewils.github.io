@@ -290,6 +290,13 @@ footer nav ul li a {
   text-decoration: none;
 }
 
+@media only screen and (max-width:400px) {
+  /* For mobile phones: */
+  .btn {
+    font-size: 14px;
+  }
+}
+
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
 
