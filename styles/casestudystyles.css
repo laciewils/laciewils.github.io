@@ -560,7 +560,7 @@ header a.topbtn {
   margin: auto;
   margin-top: 40px;
   margin-bottom: 60px;
-  width: 900px;
+  width: 80%;
 }
 
 .brandingexplanation {
@@ -925,6 +925,20 @@ footer nav ul li a {
   .palette {
     width: 250px;
   }
+
+  .logo1 {
+    width: 80px;
+  }
+  .logo2,
+  .logo3 {
+    width: 60px;
+  }
+
+  .brandingbox {
+    width: 90%;
+  }
+
+
 }
 
 @media only screen and (max-width:620px) {
@@ -939,8 +953,6 @@ footer nav ul li a {
   .navigation ul {
     display: none;
   }
-
-
 
   .hero .brightboardlogo {
     width: 50%;
@@ -983,6 +995,10 @@ footer nav ul li a {
     width: 60px;
   }
 
+  .palette {
+    width: 300px;
+  }
+
   .brandingtypographyheadlines h2,
   .brandingtypographyparagraphs h2 {
     font-size: 18px;
@@ -1010,11 +1026,11 @@ footer nav ul li a {
 
 @media only screen and (min-width:620px) {
   /* For mobile phones: */
-
-
   .palette {
-    width: 350px;
+    width: 400px;
   }
+
+
 }
 
 @media only screen and (max-width:768px) {
@@ -1038,6 +1054,7 @@ footer nav ul li a {
   .logo3 {
     width: 60px;
   }
+
 
   .personas .user {
     width: 80%;
@@ -1066,9 +1083,7 @@ footer nav ul li a {
     width: 125px;
   }
 
-  .palette {
-    width: 400px;
-  }
+
 
   .dropdownnav {
     display: none;
@@ -1111,9 +1126,7 @@ footer nav ul li a {
 
 
 
-  .brandingbox {
-    width: 80%;
-  }
+
 
   footer nav ul {
     font-size: 16px;
