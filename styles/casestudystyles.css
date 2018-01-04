@@ -912,14 +912,14 @@ footer nav ul li a {
 }
 
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:320px) {
   /* For mobile phones: */
   .hero a.btn {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .dropbtn {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .palette {
