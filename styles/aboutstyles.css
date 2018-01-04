@@ -303,6 +303,14 @@ footer nav ul li a {
     display: none;
   }
 
+  .rw-sentence {
+    font-size: 18px;
+  }
+
+  .laciepic {
+    width: 300px;
+  }
+
 }
 
 @media only screen and (min-width:620px) {
