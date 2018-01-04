@@ -169,10 +169,10 @@ header .contact p {
 }
 
 header a.btn {
-  background: #FFFFFF;
+  background: #000;
   border: 2px solid #000000;
   border-radius: 1px;
-  color: #000;
+  color: #fff;
   font-weight: 700;
   padding: 10px 30px;
   text-align: center;
