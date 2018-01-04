@@ -912,16 +912,16 @@ footer nav ul li a {
 }
 
 
-@media only screen and (max-width:320px) {
+@media only screen and (max-width:420px) {
   /* For mobile phones: */
   .hero a.btn {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .dropbtn {
-    font-size: 10px;
+    font-size: 12px;
   }
-
+  
   .palette {
     width: 250px;
   }
@@ -940,13 +940,7 @@ footer nav ul li a {
     display: none;
   }
 
-  .hero a.btn {
-    font-size: 14px;
-  }
 
-  .dropbtn {
-    font-size: 14px;
-  }
 
   .hero .brightboardlogo {
     width: 50%;
@@ -1016,11 +1010,11 @@ footer nav ul li a {
 
 @media only screen and (min-width:620px) {
   /* For mobile phones: */
+
+
   .palette {
     width: 350px;
   }
-
-
 }
 
 @media only screen and (max-width:768px) {
@@ -1056,6 +1050,8 @@ footer nav ul li a {
 }
 
 @media only screen and (min-width:768px) {
+
+
 
   .overviewtext {
     width: 70%;
