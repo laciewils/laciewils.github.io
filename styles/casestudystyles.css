@@ -61,6 +61,52 @@ header {
   margin-left: 15px;
 }
 
+.dropbtnnav {
+    background: #000;
+    border-radius: 1px;
+    color: #FFF;
+    cursor: pointer;
+    font-family: "Open Sans Condensed";
+    font-size: 16px;
+    font-weight: 700;
+    min-width: 60px;
+    padding: 10px 0px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropdownnav {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content-nav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content-nav a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content-nav a:hover {background-color: #f1f1f1}
+
+.dropdownnav:hover .dropdown-content-nav {
+    display: block;
+}
+
+.dropdownnav:hover .dropbtnnav {
+    background-color: #000;
+    color: #fff;
+}
+
 header a {
   text-decoration: none;
   color: #000000;
@@ -93,11 +139,13 @@ header a {
 .hero .navbuttons {
   align-items: center;
   display: flex;
+  justify-content: center;
 }
 
 header a.topbtn {
   color: #000;
   font-weight: 700;
+  margin-right: 10px;
   padding: 60px 30px;
   padding-top: 5px;
   text-align: center;
@@ -117,11 +165,12 @@ header a.topbtn {
   background: #000;
   border-radius: 1px;
   color: #FFF;
+  display: inline-block;
   font-weight: 700;
+  margin-right: 20px;
   padding: 10px 30px;
   text-align: center;
   text-decoration: none;
-  width: 70px;
 }
 
 .viewbrightboardbutton {
@@ -145,7 +194,6 @@ header a.topbtn {
 
 .dropdown {
   display: inline-block;
-  margin: 0 auto;
   position: relative;
 }
 
@@ -342,21 +390,21 @@ header a.topbtn {
   margin-top: 80px;
 }
 
+.research {
+  width: 70%;
+}
+
 .usersurveyscontent {
   line-height: 1.5;
   margin: auto;
   text-align: left;
-  width: 70%;
 }
 
 .competitorstext {
-  height: 450px;
   line-height: 1.5;
-  margin: auto;
-  margin-right: 0px;
-  padding-bottom: 60px;
+  margin: 0 auto;
+  padding-bottom: 20px;
   text-align: left;
-  width: 70%;
 }
 
 .competitorstitle {
@@ -448,10 +496,15 @@ header a.topbtn {
 
 .user ul {
   font-family: "Roboto";
-  font-size: 18px;
+  font-size: 16px;
   margin: auto;
+  margin-top: 10px;
   padding: 0px;
-  text-align: left;
+  text-align: center;
+}
+
+.user li {
+  list-style: none;
 }
 
 .user .quote {
@@ -877,16 +930,19 @@ footer nav ul li a {
     display: none;
   }
 
+  .hero a.btn {
+    font-size: 14px;
+  }
+
+  .dropbtn {
+    font-size: 14px;
+  }
+
   .hero .brightboardlogo {
     width: 50%;
   }
   .hero .brightboardslogan {
     font-size: 32px;
-  }
-  .viewbrightboardbutton,
-  .dropbtn
-   {
-     width: 20px;
   }
 
   header {
@@ -904,6 +960,10 @@ footer nav ul li a {
 
   .overviewtext p {
     font-size: 16px;
+  }
+
+  .competitorstext {
+    padding-bottom: 0px;
   }
 
   .usersurveyscontent p,
@@ -946,34 +1006,10 @@ footer nav ul li a {
 
 @media only screen and (min-width:620px) {
   /* For mobile phones: */
-  .hamburger {
-    display: none;
-  }
-
   .palette {
     width: 350px;
   }
 
-  footer nav ul {
-    font-size: 16px;
-  }
-
-  footer {
-    padding-bottom: 40px;
-  }
-
-  footer .logo {
-    float:left;
-    margin: 0px;
-    padding-bottom: 10px;
-    position: relative;
-    text-align: center;
-    width: 100%;
-  }
-
-  .footernav {
-    clear: both;
-  }
 
 }
 
@@ -987,11 +1023,8 @@ footer nav ul li a {
     width: 80%;
   }
 
-  .usersurveyscontent {
+  .research {
     width: 80%;
-  }
-  .competitorscontent {
-    width: 90%;
   }
 
   .logo1 {
@@ -1002,7 +1035,13 @@ footer nav ul li a {
     width: 60px;
   }
 
+  .personas .user {
+    width: 80%;
+  }
 
+  .navigation {
+    display: none;
+  }
 
 }
 
@@ -1011,12 +1050,7 @@ footer nav ul li a {
   .overviewtext {
     width: 70%;
   }
-  .usersurveyscontent {
-    width: 80%;
-  }
-  .competitorscontent {
-    width: 90%;
-  }
+
 
   .logo1 {
     width: 175px;
@@ -1028,6 +1062,10 @@ footer nav ul li a {
 
   .palette {
     width: 400px;
+  }
+
+  .dropdownnav {
+    display: none;
   }
 
 }
@@ -1060,14 +1098,37 @@ footer nav ul li a {
     width: 80%;
   }
 
-  .personas .user {
-    width: 80%;
+  #user1,
+  #user2 {
+    margin-bottom: 0px;
   }
+
+
 
   .brandingbox {
     width: 80%;
   }
 
+  footer nav ul {
+    font-size: 16px;
+  }
+
+  footer {
+    padding-bottom: 40px;
+  }
+
+  footer .logo {
+    float:left;
+    margin: 0px;
+    padding-bottom: 10px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+
+  .footernav {
+    clear: both;
+  }
 
 }
 
@@ -1075,12 +1136,7 @@ footer nav ul li a {
   .overviewtext {
     width: 60%;
   }
-  .usersurveyscontent {
-    width: 50%;
-  }
-  .competitorscontent {
-    width: 60%;
-  }
+
 
   .wireframeimages {
     display: grid;

@@ -42,8 +42,6 @@ p {
 }
 /* HEADER */
 header {
-  background: url('../images/lacieaboutpic2.png') 0px 0px no-repeat;
-  background-size: cover;
   color: #FFF;
   padding: 20px 100px;
   padding-bottom: 60px;
@@ -72,6 +70,52 @@ header {
   margin-left: 15px;
 }
 
+.dropbtn {
+    background: #000;
+    border-radius: 1px;
+    color: #FFF;
+    cursor: pointer;
+    font-family: "Open Sans Condensed";
+    font-size: 16px;
+    font-weight: 700;
+    min-width: 60px;
+    padding: 10px 0px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #000;
+    color: #fff;
+}
+
 header a {
   text-decoration: none;
   color: #000000;
@@ -79,6 +123,7 @@ header a {
 
 .aboutcontent {
   display: flex;
+  width: 100%;
 }
 
 header .aboutme h1 {
@@ -100,7 +145,7 @@ header .aboutme h1 span.simple {
 
 header .aboutme p {
   font-family: "Roboto";
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 100;
   line-height: 26px;
   margin: 10px 0 40px;
@@ -118,17 +163,15 @@ header a.btn {
   width: 70px;
 }
 
-
  .rw-wrapper{
 	width: 50%;
 }
 .rw-sentence{
 	margin: 0;
 	text-align: left;
-	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
 }
 .rw-sentence span{
-	color: #444;
+	color: #000;
 	white-space: nowrap;
 	font-size: 200%;
 	font-weight: normal;
@@ -142,7 +185,7 @@ header a.btn {
 	opacity: 0;
 	overflow: hidden;
 	width: 100%;
-	color: #9DC183;
+	color: #000;
 }
 
 .rw-words-2 span{
@@ -150,23 +193,23 @@ header a.btn {
 }
 .rw-words span:nth-child(2) {
 	animation-delay: 3s;
-	color: #9DC183;
+	color: #000;
 }
 .rw-words span:nth-child(3) {
 	animation-delay: 6s;
-	color: #9DC183;
+	color: #000;
 }
 .rw-words span:nth-child(4) {
 	animation-delay: 9s;
-	color: #9DC183;
+	color: #000;
 }
 .rw-words span:nth-child(5) {
 	animation-delay: 12s;
-	color: #9DC183;
+	color: #000;
 }
 .rw-words span:nth-child(6) {
 	animation-delay: 15s;
-	color: #9DC183;
+	color: #000;
 }
 @keyframes rotateWordsFirst {
     0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
@@ -177,12 +220,24 @@ header a.btn {
 }
 @keyframes rotateWordsSecond {
     0% { opacity: 1; animation-timing-function: ease-in; width: 0px; }
-    10% { opacity: 0.3; width: 0px; }
+    10% { opacity: 1; width: 0px; }
 	20% { opacity: 1; width: 100%; }
     27% { opacity: 0; width: 100%; }
     100% { opacity: 0; }
 }
 
+.aboutme {
+  margin-right: 40px;
+}
+
+.aboutpicture {
+  margin-top: 60px;
+  width: 100%;
+}
+
+.laciepic {
+  width: 450px;
+}
 
 /* FOOTER */
 footer {
@@ -260,19 +315,28 @@ footer nav ul li a {
 
 @media only screen and (max-width:768px) {
 
-
+  .navigation {
+    display: none;
+  }
 
 }
 
 @media only screen and (min-width:768px) {
 
-  .aboutcontent {
-    width:70%;
+  .dropdown {
+    display: none;
   }
 
 }
 
 @media only screen and (max-width:1024px) {
+
+  .aboutcontent {
+    display: inline-block;
+  }
+  .aboutpicture {
+    text-align: center;
+  }
 
   .box {
     display: inline-block;
@@ -304,8 +368,6 @@ footer nav ul li a {
 }
 
 @media only screen and (min-width:1024px) {
-  header .hero p.description {
-    width:50%;
-  }
+
 
 }

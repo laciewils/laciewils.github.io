@@ -22,29 +22,35 @@
           <img src="images/logo.png" alt="Lacie Wilson" />
         </a>
 
+        <div class="dropdown">
+          <button class="dropbtn">&#9776;</button>
+          <div class="dropdown-content">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="index.html#here">WORK</a>
+          </div>
+        </div>
 
       <nav class="navigation">
        <ul>
-         <li class="home"><a href="index.html">Home</a></li>
-         <li class="about"><a href="about.html">About</a></li>
-         <li class="contact"><a href="contact.html">Contact</a></li>
-         <li class="portfolio"><a href="portfolio.html">Portfolio</a></li>
+         <li class="home"><a href="index.html">HOME</a></li>
+         <li class="about"><a href="about.html">ABOUT</a></li>
+         <li class="contact"><a href="contact.html">CONTACT</a></li>
+         <li class="portfolio"><a href="index.html#here">WORK</a></li>
        </ul>
     </nav>
     </div>
     <div class="hero">
        <h1 class="animated fadeIn">BEAUTIFULLY <span class="simple">SIMPLE<span>.</h1>
-       <p class="description">I’m a UI and UX designer in Oregon with a background in coding. I
-         design user-friendly interfaces and
-         experiences. I want the user to be drawn in by the
-         interface, and stay for the experience.  </p>
+       <p class="description">I’m a UI and UX designer in <strong>Oregon</strong> with a background in
+         <strong>coding</strong>. I design and develop <strong>user-friendly</strong> interfaces and
+         experiences.</p>
        <p class="signature">- Lacie Wilson</p>
      </div>
-     <div class="centerworkbutton">
-       <a href="#" class="btn" id="buttondown">SEE MY WORK</a>
-     </div>
+
      <div class="arrow">
-       <img src="images/downarrow.png" class="downarrow" />
+       <a href="#" id="buttondown"><img src="images/downarrow.png" class="downarrow" /></a>
      </div>
     </header>
 
@@ -63,31 +69,10 @@
            <img src="images/MacBook.png" class="macbook" alt="Brightboard"/>
          </div>
        </div>
-       <div class="box" id="box1">
-         <div class="boxtext">
-           <img src="images/brightboardlogowhite.png" class="brightboardlogo" alt="Brightboard"/>
-           <h1 class="brightboardslogan">Save. Share. Collaborate.</h1>
-           <a href="brightboardindex.html" class="btn">VIEW CASE STUDY</a>
-         </div>
-         <div class="boximage">
-           <img src="images/MacBook.png" class="macbook" alt="Brightboard"/>
-         </div>
-       </div>
-       <div class="box" id="box1">
-         <div class="boxtext">
-           <img src="images/brightboardlogowhite.png" class="brightboardlogo" alt="Brightboard"/>
-           <h1 class="brightboardslogan">Save. Share. Collaborate.</h1>
-           <a href="brightboardindex.html" class="btn">VIEW CASE STUDY</a>
-         </div>
-         <div class="boximage">
-           <img src="images/MacBook.png" class="macbook" alt="Brightboard"/>
-         </div>
-       </div>
      </div>
-     <div class="centerbacktopbutton">
-       <a href="#" class="btn" id="buttonup">BACK TO TOP</a>
-     </div>
+
    </section>
+
 </main>
 
  <!-- Footer -->
@@ -102,7 +87,7 @@
            <li><a href="index.html">Home</a></li>
            <li><a href="about.html">About</a></li>
            <li><a href="contact.html">Contact</a></li>
-           <li><a href="portfolio.html">Portfolio</a></li>
+           <li><a href="index.html#here">Work</a></li>
            <li><a href="https://www.linkedin.com/in/lacie-wilson-531719a3/" target="_blank" >LinkedIn</a></li>
            <li><a href="mailto:laciewilson9@gmail.com">Email Me</a></li>
          </ul>
@@ -121,6 +106,8 @@
         scrollTop: $("#here").offset().top},
         'slow');
     });
+
+}
  </script>
 
 
