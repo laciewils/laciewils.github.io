@@ -915,7 +915,7 @@ footer nav ul li a {
 @media only screen and (max-width:400px) {
   /* For mobile phones: */
   .btn {
-    font-size: 14px;
+    font-size: 8px;
   }
 
   .palette {
