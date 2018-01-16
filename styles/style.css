@@ -33,8 +33,30 @@ p {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
+
 /* HEADER */
+
+@keyframes colorchange
+{
+ 0%   {background: #0048c3;}
+ 25%  {background: #8439c5;}
+ 50%  {background: #4b1da7;}
+ 75%  {background: #ba0b97;}
+ 100% {background: #0048c3;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+  0%   {background: #0048c3;}
+  25%  {background: #8439c5;}
+  50%  {background: #4b1da7;}
+  75%  {background: #ba0b97;}
+  100% {background: #0048c3;}
+}
+
 header {
+  animation: colorchange 10s infinite;
+  -webkit-animation: colorchange 10s infinite; /* Chrome and Safari */
   background: url('../images/designphoto1.png') 0px 0px no-repeat;
   background-size: cover;
   color: #FFF;
@@ -46,11 +68,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 20px;
 }
 
 .topheader img {
-  width: 100px;
+  width: 80px;
 }
 
 
@@ -70,9 +91,9 @@ header {
     border-radius: 1px;
     color: #FFF;
     cursor: pointer;
-    font-family: "Open Sans Condensed";
+    font-family: "Open Sans";
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
     min-width: 60px;
     padding: 10px 0px;
     text-align: center;
@@ -117,20 +138,28 @@ header a {
 }
 
 .hero {
+  margin-top: 80px;
+  padding-bottom: 40px;
   width: 100%;
 }
 
+header .hero strong {
+  color: black;
+}
+
 header .hero h1 {
+  color: #fff;
   font-size: 48px;
   font-weight: bold;
   padding-top: 30px;
 }
 
 header .hero h1 span.simple {
-  color: #9DC183;
+  color: #000;
 }
 
 header .hero p.description {
+  color: #fff;
   font-size: 22px;
   font-weight: 100;
   line-height: 26px;
@@ -138,27 +167,10 @@ header .hero p.description {
 }
 
 .signature {
-  color: #000000;
+  color: #fff;
   font-family: 'Dancing Script', Helvetica, Arial, sans-serif;
   margin-bottom: 100px;
   font-size: 22px;
-}
-
-header a.btn {
-  background: #FFFFFF;
-  border: 2px solid #000000;
-  border-radius: 1px;
-  color: #000;
-  font-weight: 700;
-  padding: 10px 30px;
-  text-align: center;
-  text-decoration: none;
-  width: 70px;
-}
-
-.centerworkbutton {
-  margin-top: 100px;
-  text-align: center;
 }
 
 .arrow {
@@ -193,7 +205,8 @@ header a.btn {
 }
 
 .box:hover {
-  background: #4ABDAC;
+  background: url('../images/macbook.png');
+  background-size: 100%;
 }
 
 #box1 h1 {
@@ -223,11 +236,12 @@ header a.btn {
   background: #FFF;
   border-radius: 1px;
   color: #000;
-  font-weight: 700;
+  font-family: "Open Sans";
+  font-weight: 400;
   padding: 10px 30px;
   text-align: center;
   text-decoration: none;
-  width: 100px;
+  width: 140px;
 }
 
 
@@ -264,7 +278,7 @@ footer nav {
 
 footer p,
 footer nav ul {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 100;
   padding: 0px;
   text-align: center;
@@ -299,12 +313,18 @@ footer nav ul li a {
     width: 100%;
   }
 
+  footer nav ul {
+    font-size: 16px;
+  }
 
 }
 
 @media only screen and (min-width:620px) {
   /* For mobile phones: */
 
+  footer nav ul {
+    font-size: 22px;
+  }
 
 }
 
@@ -336,9 +356,6 @@ footer nav ul li a {
     padding-top: 40px;
   }
 
-  footer nav ul {
-    font-size: 16px;
-  }
 
   footer {
     padding-bottom: 40px;

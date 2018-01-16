@@ -8,18 +8,22 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans|Open+Sans+Condensed:300|Raleway|PT+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Roboto+Slab" rel="stylesheet">
 
     <!-- CSS -->
-     <link rel="stylesheet" href="styles/casestudystyles.css">
      <link rel="stylesheet" href="styles/animate.css">
+     <link rel="stylesheet" href="styles/casestudystyles.css">
+
+
+     <script src="javascript/jquery-3.2.1.min.js"></script>
+
 
   </head>
 <body>
 <header>
   <div class="topheader">
     <a href="index.html" class="site-logo">
-      <img src="images/logo.png" alt="Lacie Wilson" />
+      <img src="images/logowhite.png" alt="Lacie Wilson" />
     </a>
 
     <div class="dropdownnav">
@@ -47,18 +51,42 @@
     <div class="navbuttons">
         <a href="http://lacie-wilson.com/Brightboard/" target"_blank" class="btn">VIEW BRIGHTBOARD SITE</a>
       <div class="dropdown">
-        <button class="dropbtn">NAVIGATION</button>
-        <div class="dropdown-content">
+        <button class="dropbtn">MENU</button>
+        <div class="dropdown-content btn">
           <a href="#" id="buttondownoverview">OVERVIEW</a>
           <a href="#" id="buttondownusersurveys">RESEARCH</a>
           <a href="#" id="buttondownbranding">BRANDING</a>
           <a href="#" id="buttondownwireframes">WIREFRAMES</a>
           <a href="#" id="buttondownproblem">MOCKUPS</a>
           <a href="#" id="buttondownconclusion">CONCLUSION</a>
+          <a href="http://lacie-wilson.com/Brightboard/" id="buttondownconclusion">VIEW SITE</a>
         </div>
       </div>
     </div>
-     <img class="macbook" src="images/MacBook.png" alt="brightboard" />
+
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img class ="slide" src="images/Macbook-Air1.png" >
+    </div>
+
+    <div class="mySlides fade">
+      <img class ="slide" src="images/Macbook-Air2.png" >
+    </div>
+
+    <div class="mySlides fade">
+      <img class ="slide" src="images/Macbook-Air3.png" >
+    </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
   </div>
   </header>
   <section class="deliverables">
@@ -115,53 +143,53 @@
 
 <!-- Overview -->
 <section class="overview" id="overviewhere">
-  <div class="overviewcontent">
-  <div class="overviewtext">
-    <div class="aboutbrightboard">
-      <h2>Overview.</h2>
-      <h1>First of all, what is Brightboard?</h1>
-      <p>Brightboard is an application that allows a user to create simple note documents,
-         store images, save links to websites, and collaborate and share with other users.
-         The application features the ability to add or edit, view and organize, and share content.
-         There is also collaboration functionality that makes the application interactive. Brightboard
-         strives to find the balance between professional and personal content storing, and make
-         the application fun for all uses.
-       </p>
-    </div>
-    <div class="overviewdivider">
-    </div>
-    <div class="challenge">
-      <h2>Problem.</h2>
-      <h1>So what's the challenge for Brightboard?</h1>
-      <p>The challenge is to differentiate the application from the
-        similar ones on the market already. I needed to identify any hole left by other applications and
-        make Brightboard stand out in those areas. To do this, I researched the competitors and surveyed
-        potential users.
-    </div>
-    <div class="overviewdivider">
-    </div>
-    <div class="goal">
-      <h2>Goal.</h2>
-      <h1>How does Brightboard achieve this goal?</h1>
-      <p>Brightboard will aim to be like a personal assistant application - organizing and keeping ideas, inspirations,
-        and relevant information that can be used personally or with friends and colleagues. Brightboard will have the ability
-        to share to social media and store information seen on social media, but not be a type of social
-        media directly. Brightboard will have the ability to store work-related information and collaborate with colleagues,
-        but not be just another sterile work application. Brightboard will take on a more colorful palette and
-        have more visual elements than the researched competitors.
-      </p>
-    </div>
+
+    <div class="overviewtext">
+
+      <div class="aboutbrightboard">
+        <h1>What is Brightboard?</h1>
+        <h2>Overview.</h2>
+        <p>Brightboard is an application that allows a user to create simple note documents,
+           store images, save links to websites, and collaborate and share with other users.
+           The application features the ability to add or edit, view and organize, and share content.
+           There is also collaboration functionality that makes the application interactive. Brightboard
+           strives to find the balance between professional and personal content storing, and make
+           the application fun for all uses.
+         </p>
+      </div>
+      <div class="overviewdivider">
+      </div>
+          <div class="challenge">
+            <h2>Problem.</h2>
+            <p>The challenge is to differentiate the application from the
+              similar ones on the market already. I needed to identify any hole left by other applications and
+              make Brightboard stand out in those areas. To do this, I researched the competitors and surveyed
+              potential users.
+          </div>
+          <div class="homepagepicture">
+            <img src="images/Brightboard_HomePage.png" class="brightboardhomepage"/>
+          </div>
+      <div class="overviewdivider">
+      </div>
+      <div class="goal">
+        <h2>Goal.</h2>
+        <p>Brightboard will aim to be like a personal assistant application - organizing and keeping ideas, inspirations,
+          and relevant information that can be used personally or with friends and colleagues. Brightboard will have the ability
+          to share to social media and store information seen on social media, but not be a type of social
+          media directly. Brightboard will have the ability to store work-related information and collaborate with colleagues,
+          but not be just another sterile work application. Brightboard will take on a more colorful palette and
+          have more visual elements than the researched competitors.
+        </p>
+      </div>
 </div>
-</div>
-<div class="homepagepicture">
-  <img src="images/Brightboard_HomePage.png" class="brightboardhomepage"/>
-</div>
+
 </section>
 
 <section class="usersurveys" id="usersurveyshere">
-  <div class="research">
   <div class="usersurveyscontent">
+    <div class="researchcontent">
     <h1>User and Competitor Research</h1>
+    <h2>Research Process.</h2>
     <p class="explanation">
       In the beginning stages of my Brightboard research, I looked into potential competitors and questioned
       potential users. I noted the features the competitors did and did not have, as well as the feel and design
@@ -186,7 +214,7 @@
     </div>
       <div class="competitorstext">
         <div class="competitorstitle">
-          <h1>Competitive Analysis</h1>
+          <h2>Competitive Analysis.</h2>
         </div>
         <p>
         A good representation of the range of competitors include Dropbox, Evernote, and Pinterest.
@@ -200,9 +228,11 @@
         place. This is the void that Brightboard is trying to fill.
       </p>
       </div>
-</div>
+    </div>
+    </section>
 
-    <div class="personas">
+    <section class="personas">
+      <img class="surveyimagetop" src="images/surveyimagetop.jpeg" />
       <div class="user" id="user1">
         <img class="userpicture" src="images/melissapersona.png" alt="User"/>
         <h1 class="name">Melissa</h1>
@@ -250,7 +280,7 @@
            of the two would be wonderful!”
          </p>
       </div>
-  </div>
+      <img class="surveyimagebottom" src="images/surveyimagebottom.jpeg" />
   </section>
 
   <section class="branding" id="brandinghere">
@@ -356,13 +386,11 @@
     </div>
 
   </section>
-  <div class="divider">
-  </div>
+
     <section class="conclusion" id="conclusionhere">
       <h1>Conclusion</h1>
       <div class="conclusioncontent">
       <div class="conclusiontext">
-      <h2>How did I achieve my goal for Brightboard?</h2>
       <p>
         The goal of the Brightboard project was to create a unique application, both in terms of functionality
         and appearance. A main component to differentiating Brightboard from content sharing competitors was to
@@ -387,13 +415,10 @@
   <div class="worktitle" id="here">WORK</div>
   <div class="parent">
     <div class="workbox" id="workbox1">
-      <div class="boxtext">
+      <div class="workboxtext">
         <img src="images/brightboardlogowhite.png" class="brightboardlogo" alt="Brightboard"/>
         <h1 class="brightboardslogan">Save. Share. Collaborate.</h1>
         <a href="brightboardindex.html" class="btn">VIEW CASE STUDY</a>
-      </div>
-      <div class="boximage">
-        <img src="images/MacBook.png" class="macbook" alt="Brightboard"/>
       </div>
     </div>
 
@@ -424,7 +449,6 @@
     </div>
 </footer>
 
-<script src="js/jquery-3.2.1.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 $("#buttondownoverview").click(function() {
@@ -463,6 +487,28 @@ $("#buttondownbranding").click(function() {
         scrollTop: $("#conclusionhere").offset().top},
         'slow');
     });
+
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
 </script>
 
 </body>

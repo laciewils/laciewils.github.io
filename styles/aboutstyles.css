@@ -41,22 +41,31 @@ p {
   /*width: 30%;*/
 }
 /* HEADER */
+
 header {
-  color: #FFF;
-  padding: 20px 100px;
-  padding-bottom: 60px;
-  height: auto;
+  height: 100%;
 }
 
 .topheader {
+  background-color: #000;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 20px;
+  padding: 10px 100px;
+  width: 100%;
 }
 
 .topheader img {
-  width: 100px;
+  width: 80px;
+}
+
+.navigation {
+  margin-right: 200px;
+}
+
+.navigation a {
+  color: #fff;
 }
 
 .navigation ul {
@@ -121,12 +130,28 @@ header a {
   color: #000000;
 }
 
+.resume a.btn {
+  background: #000;
+  border: 2px solid #000;
+  border-radius: 1px;
+  color: #fff;
+  font-family: "Open Sans";
+  font-weight: 400;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+}
+
 .aboutcontent {
-  display: flex;
   width: 100%;
 }
 
-header .aboutme h1 {
+.aboutmeheadline {
+  margin-left: 100px;
+}
+
+header .aboutmeheadline h1 {
   font-size: 48px;
   font-weight: bold;
   margin-top: 10;
@@ -134,25 +159,30 @@ header .aboutme h1 {
   padding-top: 30px;
 }
 
-header .aboutme h2 {
+.aboutmecontent {
+  margin-left: 100px;
+
+}
+
+header .aboutmecontent h2 {
   font-weight: bold;
   margin-top: 0;
 }
 
-header .aboutme h1 span.simple {
+header .aboutmeheadline h1 span.simple {
   color: #9DC183;
 }
 
 header .aboutitalic {
-  font-style: italic;
+  font-family: "Roboto";
 }
 
-header .aboutme p {
+header .aboutmecontent p {
   font-family: "Roboto";
   font-size: 18px;
   font-weight: 100;
   line-height: 26px;
-  margin: 10px 0 40px;
+  padding-bottom: 20px;
 }
 
 header a.btn {
@@ -167,7 +197,7 @@ header a.btn {
   width: 70px;
 }
 
- .rw-wrapper{
+.rw-wrapper{
 	width: 50%;
 }
 .rw-sentence{
@@ -231,18 +261,21 @@ header a.btn {
     100% { opacity: 0; }
 }
 
-.aboutme {
+.aboutmecontent {
   margin-right: 40px;
+  width: 80%
 }
 
 .aboutpicture {
+  margin-left: 0px;
   margin-top: 60px;
-  width: 100%;
 }
 
 .laciepic {
-  width: 450px;
+  width: 100%;
 }
+
+
 
 /* FOOTER */
 footer {
@@ -276,7 +309,7 @@ footer nav {
 
 footer p,
 footer nav ul {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 100;
   padding: 0px;
   text-align: center;
@@ -318,12 +351,20 @@ footer nav ul li a {
     width: 300px;
   }
 
+  footer nav ul {
+    font-size: 16px;
+  }
+
 }
 
 @media only screen and (min-width:620px) {
   /* For mobile phones: */
   .hamburger {
     display: none;
+  }
+
+  footer nav ul {
+    font-size: 22px;
   }
 
 }
@@ -367,9 +408,7 @@ footer nav ul li a {
     padding-top: 40px;
   }
 
-  footer nav ul {
-    font-size: 16px;
-  }
+
 
   footer {
     padding-bottom: 40px;

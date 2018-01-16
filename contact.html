@@ -12,12 +12,15 @@
     <!-- CSS -->
      <link rel="stylesheet" href="styles/contactstyles.css">
 
+     <script src="javascript/jquery-3.2.1.min.js"></script>
+
+
   </head>
   <body>
     <header>
       <div class="topheader">
         <a href="index.html" class="site-logo">
-          <img src="images/logo.png" alt="Lacie Wilson" />
+          <img src="images/logowhite.png" alt="Lacie Wilson" />
         </a>
 
         <div class="dropdown">
@@ -40,14 +43,16 @@
     </nav>
     </div>
     <div class="contactwrapper">
-      <div class="contact">
+      <div class="contactcontent">
          <h1 class="animated fadeIn">CONNECT WITH <span class="simple">ME<span>.</h1>
         <h2>I'd love to hear from you!
         </h2>
          <p>Connect with me online or contact me right here.
         </p>
-        <a href="mailto:laciewilson9@gmail.com" class="btn">EMAIL ME!</a>
-        <a href="https://www.linkedin.com/in/lacie-wilson-531719a3/" target="_blank" class="btn linkedin">LINKEDIN</a>
+        <div class="buttons">
+          <a href="mailto:laciewilson9@gmail.com" class="btn email">EMAIL ME!</a>
+          <a href="https://www.linkedin.com/in/lacie-wilson-531719a3/" target="_blank" class="btn linkedin">LINKEDIN</a>
+        </div>
        </div>
 
    </div>
@@ -75,7 +80,6 @@
   </div>
  </footer>
 
- <script src="js/jquery-3.2.1.min.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  <script>
  $("#buttondown").click(function() {
