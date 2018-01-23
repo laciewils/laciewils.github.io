@@ -37,9 +37,6 @@ p {
   font-family: 'Dancing Script', Helvetica, Arial, sans-serif;
 }
 
-.one-third {
-  /*width: 30%;*/
-}
 /* HEADER */
 
 header {
@@ -144,11 +141,8 @@ header a {
 }
 
 .aboutcontent {
-  width: 100%;
-}
-
-.aboutmeheadline {
-  margin-left: 100px;
+  margin: auto;
+  width: 50%;
 }
 
 header .aboutmeheadline h1 {
@@ -159,22 +153,18 @@ header .aboutmeheadline h1 {
   padding-top: 30px;
 }
 
-.aboutmecontent {
-  margin-left: 100px;
-
-}
-
 header .aboutmecontent h2 {
   font-weight: bold;
   margin-top: 0;
 }
 
 header .aboutmeheadline h1 span.simple {
-  color: #9DC183;
+  color: #4b1da7;
 }
 
 header .aboutitalic {
-  font-family: "Roboto";
+  font-family: "Open Sans";
+  font-style: italic;
 }
 
 header .aboutmecontent p {
@@ -261,11 +251,6 @@ header a.btn {
     100% { opacity: 0; }
 }
 
-.aboutmecontent {
-  margin-right: 40px;
-  width: 80%
-}
-
 .aboutpicture {
   margin-left: 0px;
   margin-top: 60px;
@@ -274,8 +259,6 @@ header a.btn {
 .laciepic {
   width: 100%;
 }
-
-
 
 /* FOOTER */
 footer {
@@ -382,6 +365,15 @@ footer nav ul li a {
   .aboutpicture {
     margin-top: -20px;
   }
+
+  .aboutmeheadline {
+    margin-left: 20px;
+  }
+
+  .aboutmecontent {
+    margin-left: 20px;
+  }
+
 
 }
 

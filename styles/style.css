@@ -195,7 +195,7 @@ header .hero p.description {
 
 .box {
   align-items: center;
-  background-color: rgba(0,0,0,.50);
+  background-color: #d3d3d3;
   display: flex;
   /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.20);*/
   height: 350px;
@@ -210,7 +210,7 @@ header .hero p.description {
 }
 
 #box1 h1 {
-  color: #fff;
+  color: #000;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   margin-top: 0px;
 }
@@ -233,15 +233,20 @@ header .hero p.description {
 }
 
 .work a.btn {
-  background: #FFF;
+  background: #000;
   border-radius: 1px;
-  color: #000;
+  color: #fff;
   font-family: "Open Sans";
   font-weight: 400;
   padding: 10px 30px;
   text-align: center;
   text-decoration: none;
   width: 140px;
+}
+
+.work a.btn:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 

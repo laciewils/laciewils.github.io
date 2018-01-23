@@ -423,7 +423,7 @@ header a.topbtn {
   padding-top: 40px;
   margin: auto;
   text-align: left;
-  width: 70%;
+  width: 50%;
 }
 
 
@@ -445,8 +445,8 @@ header a.topbtn {
 
 .overviewtext p {
   line-height: 1.5;
+  margin: auto;
   margin-right: 0px;
-  width: 70%;
 }
 
 .overviewdivider {
@@ -498,15 +498,20 @@ header a.topbtn {
 
 .usersurveyscontent {
   line-height: 1.5;
-  margin: auto;
+  margin: 0 auto;
   text-align: left;
-  width: 70%;
+}
+
+.researchcontent {
+  margin: 0 auto;
+  width: 50%;
 }
 
 .competitorstext {
   line-height: 1.5;
   margin: 0 auto;
   text-align: left;
+  width: 50%;
 }
 
 .competitorstitle {
@@ -519,6 +524,8 @@ header a.topbtn {
   justify-content: space-between;
   margin-top: 20px;
 }
+
+
 
 .dropbox,
 .evernote,
@@ -591,6 +598,7 @@ header a.topbtn {
 }
 
 .user .quote {
+  font-family: "Open Sans";
   font-size: 18px;
   font-style: italic;
   font-weight: bold;
@@ -634,7 +642,7 @@ header a.topbtn {
 .brandingexplanation {
   line-height: 1.5;
   margin: auto;
-  width: 70%;
+  width: 50%;
 }
 
 .brandingexplanation h2 {
@@ -727,17 +735,52 @@ header a.topbtn {
   width: 50%;
 }
 
-.wireframeimages {
-  margin: auto;
-  padding-bottom: 0px;
-  width: 90%;
+.mySlides2 {display: none;}
+img {vertical-align: middle;}
+
+.slide2 {
+  width: 80%;
 }
 
-.wireframe1,
-.wireframe2,
-.wireframe3,
-.wireframe4 {
-  max-width: 100%;
+/* Slideshow container */
+.slideshow-container2 {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot2 {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-bottom: 60px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active2 {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade2 {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade2 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade2 {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 .wireframes a.btn {
@@ -774,7 +817,7 @@ header a.topbtn {
 .mockups p {
   margin: 0 auto;
   padding-bottom: 40px;
-  width: 60%
+  width: 50%;
 }
 
 .mockups a.btn {
@@ -790,6 +833,56 @@ header a.topbtn {
   width: 70px;
 }
 
+.mySlides4 {display: none;}
+img {vertical-align: middle;}
+
+.slide4 {
+  width: 80%;
+}
+
+/* Slideshow container */
+.slideshow-container4 {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 60px;
+}
+
+/* The dots/bullets/indicators */
+.dot4 {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-bottom: 60px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active4 {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade4 {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade4 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade4 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
 .usertesting {
   line-height: 1.5;
   margin: 0 auto;
@@ -800,7 +893,7 @@ header a.topbtn {
   margin: auto;
   margin-bottom: 40px;
   margin-top: 40px;
-  width: 60%;
+  width: 50%;
 }
 
 .preferenceimages {
@@ -824,12 +917,61 @@ header a.topbtn {
   box-shadow: 0 0 4px 3px rgba(0, 255, 0, 0.6);
 }
 
+.mySlides3 {display: none;}
+img {vertical-align: middle;}
+
+.slide3 {
+  width: 80%;
+}
+
+/* Slideshow container */
+.slideshow-container3 {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot3 {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-bottom: 60px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active3 {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade3 {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade3 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade3 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
 .preftestdivider {
   display: block;
   position: relative;
   padding: 0;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 20px;
   height: 0;
   width: 25%;
   max-height: 0;
@@ -852,7 +994,7 @@ header a.topbtn {
   display: flex;
   line-height: 1.5;
   margin: 0 auto;
-  width: 60%;
+  width: 50%;
 }
 
 .conclusion h1 {
@@ -886,7 +1028,7 @@ header a.topbtn {
 
 .work .workbox {
   align-items: center;
-  background-color: rgba(0,0,0,.50);
+  background-color: #d3d3d3;
   display: flex;
   /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.20);*/
   height: auto;
@@ -903,7 +1045,7 @@ header a.topbtn {
   }
 
 .work #workbox1 h1 {
-  color: #fff;
+  color: #000;
   font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
   margin-top: 0px;
 }
@@ -937,6 +1079,10 @@ header a.topbtn {
   width: 150px;
 }
 
+.work a.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
 
 
 .centerbacktopbutton a.btn {
@@ -1078,12 +1224,21 @@ footer nav ul li a {
     margin-bottom: 0px;
   }
 
+  .overviewtext {
+    width: 80%;
+  }
+
   .overviewtext p {
     font-size: 18px;
   }
 
+  .researchcontent {
+    width: 80%;
+  }
+
   .competitorstext {
     padding-bottom: 0px;
+    width: 80%;
   }
 
   .usersurveyscontent p,
@@ -1097,6 +1252,10 @@ footer nav ul li a {
   .logo2,
   .logo3 {
     width: 60px;
+  }
+
+  .brandingexplanation {
+    width: 80%;
   }
 
   .palette {
