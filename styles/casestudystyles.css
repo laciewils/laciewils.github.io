@@ -521,11 +521,9 @@ header a.topbtn {
 .competitorslogos {
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 20px;
 }
-
-
 
 .dropbox,
 .evernote,
@@ -1236,6 +1234,7 @@ footer nav ul li a {
     width: 80%;
   }
 
+
   .competitorstext {
     padding-bottom: 0px;
     width: 80%;
@@ -1323,6 +1322,12 @@ footer nav ul li a {
 
   .research {
     width: 80%;
+  }
+
+  .dropbox,
+  .evernote,
+  .pinterest {
+    width: 90px;
   }
 
   .logo1 {
