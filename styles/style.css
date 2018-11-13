@@ -38,20 +38,20 @@ p {
 
 @keyframes colorchange
 {
- 0%   {background: #0048c3;}
- 25%  {background: #8439c5;}
- 50%  {background: #4b1da7;}
- 75%  {background: #ba0b97;}
- 100% {background: #0048c3;}
+ 0%   {background: #BBC3C6;}
+ 25%  {background: #D1B280;}
+ 50%  {background: #CDBEA7;}
+ 75%  {background: #CDAB81;}
+ 100% {background: #BBC3C6;}
 }
 
 @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
 {
-  0%   {background: #0048c3;}
-  25%  {background: #8439c5;}
-  50%  {background: #4b1da7;}
-  75%  {background: #ba0b97;}
-  100% {background: #0048c3;}
+  0%   {background: #BBC3C6;}
+  25%  {background: #D1B280;}
+  50%  {background: #CDBEA7;}
+  75%  {background: #CDAB81;}
+  100% {background: #BBC3C6;}
 }
 
 header {
@@ -60,20 +60,20 @@ header {
   background: url('../images/designphoto1.png') 0px 0px no-repeat;
   background-size: cover;
   color: #FFF;
-  padding: 20px 100px;
   height: auto;
 }
 
 .topheader {
+  background-color: rgba(255, 255, 255, 0.5);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 20px 100px;
 }
 
 .topheader img {
   width: 80px;
 }
-
 
 .navigation ul {
   display: flex;
@@ -138,8 +138,8 @@ header a {
 }
 
 .hero {
-  margin-top: 80px;
-  padding-bottom: 40px;
+  margin-top: 20px;
+  padding: 60px 100px;
   width: 100%;
 }
 
