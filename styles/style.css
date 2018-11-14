@@ -204,7 +204,7 @@ header .hero p.description {
   width: 100%;
 }
 
-.box:hover {
+#box1:hover {
   background: url('../images/macbook.png');
   background-size: 100%;
 }
@@ -247,6 +247,14 @@ header .hero p.description {
 .work a.btn:hover {
   background-color: #fff;
   color: #000;
+}
+
+.box .wrwlogo {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 0px;
+  width: 400px;
 }
 
 

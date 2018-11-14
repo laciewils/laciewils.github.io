@@ -63,15 +63,20 @@
           </div>
         </div>
 
-        <div class="bar">
-          <div class="noline"><p>Health & Science</p></div>
-          <div class="line"><p>Computer Science</p></div>
-          <div class="line"><p>Teaching</p></div>
-          <div class="line"><p>iOS Development</p></div>
-          <div class="line"><p>UI Design and Research</p></div>
-          <div class="line"><p>Personal Life</p></div>
-          <div class="noline"></div>
+        <div class="arrow">
+          <a href="#" id="buttondown"><img src="images/downarrow.png" class="downarrow" /></a>
         </div>
+
+      <div class="aboutnavbar" id="here">
+      <ul>
+        <li><a href="#" id="US" >Undergraduate Science</a></li>
+        <li><a href="#" id="CS">Computer Science</a></li>
+        <li><a href="#" id="T">Teaching</a></li>
+        <li><a href="#" id="MD">Mobile Development</a></li>
+        <li><a href="#" id="UX">UX Design and Research</a></li>
+        <li><a href="#" id="PT">Personal Time</a></li>
+      </ul>
+
 
         <div class="aboutmecontent">
           <!--<p class="aboutitalic"><strong>I love building a beautiful, clean interface that pulls the user in but doesn't affect the
@@ -80,9 +85,9 @@
 
             </div>
 
-            <div class="content-undergrad">
+            <div class="content-undergrad" id="UShere">
             <h2>Undergraduate Health and Science</h2>
-            <h3>Scientic Research &nbsp;&nbsp;&nbsp;Surveying Community Members &nbsp;&nbsp;&nbsp;Statistical Analysis &nbsp;&nbsp;&nbsp;In-person Collaboration</h3>
+            <h3>Scientific Research &nbsp;&nbsp;&nbsp;Surveying Community Members &nbsp;&nbsp;&nbsp;Statistical Analysis &nbsp;&nbsp;&nbsp;In-person Collaboration</h3>
             <p>
             My undergraduate curriculum at UC Berkeley included a wide range of science and health courses.
             From physical science to the biological science to community health, each course imparted in me a
@@ -92,7 +97,7 @@
             From there, I took my background in math and science to a completely new field – computer science.</p>
             </div>
 
-            <div class="content-cs">
+            <div class="content-cs" id="CShere">
             <h2>Remote Computer Science</h2>
             <h3>Remote Learning &nbsp;&nbsp;&nbsp;Online Collaboration</h3>
             <p>
@@ -102,7 +107,7 @@
             answering, and motivation. <!-- more about coding--></p>
             </div>
 
-            <div class="content-teaching">
+            <div class="content-teaching" id="There">
             <h2>After School Teaching</h2>
             <h3>Presentation of Curriculum &nbsp;&nbsp;&nbsp;Teaching</h3>
             <p>The independent nature of the program encouraged me to take on a job as an
@@ -110,7 +115,7 @@
             courses.</p>
             </div>
 
-            <div class="content-ios">
+            <div class="content-ios" id="MDhere">
             <h2>iOS Development</h2>
             <h3>iOS Front-End &nbsp;&nbsp;&nbsp;iOS Back-End</h3>
             <p>My final project for my computer science
@@ -120,7 +125,7 @@
             while incorporating my coding skills.</p>
             </div>
 
-            <div class="content-ux">
+            <div class="content-ux" id="UXhere">
             <h2>UI/UX Research, Development, & Design</h2>
             <h3></h3>
             <p>
@@ -131,7 +136,7 @@
               clean interface that pulls the user in but doesn't affect the usability of the application.</p>
             </div>
 
-              <div class="content-life">
+              <div class="content-life" id="PThere">
               <h2>Life Outside of Work</h2>
               <h3></h3>
               <p>
@@ -169,11 +174,45 @@
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  <script>
- $("#buttondown").click(function() {
-   $('html,body').animate({
-        scrollTop: $("#here").offset().top},
-        'slow');
-    });
+   $("#buttondown").click(function() {
+     $('html,body').animate({
+          scrollTop: $("#here").offset().top},
+          'slow');
+      });
+      $("#US").click(function() {
+        $('html,body').animate({
+             scrollTop: $("#UShere").offset().top},
+             'slow');
+         });
+         $("#CS").click(function() {
+           $('html,body').animate({
+                scrollTop: $("#CShere").offset().top},
+                'slow');
+            });
+            $("#T").click(function() {
+              $('html,body').animate({
+                   scrollTop: $("#There").offset().top},
+                   'slow');
+               });
+               $("#MD").click(function() {
+                 $('html,body').animate({
+                      scrollTop: $("#MDhere").offset().top},
+                      'slow');
+                  });
+                  $("#UX").click(function() {
+                    $('html,body').animate({
+                         scrollTop: $("#UXhere").offset().top},
+                         'slow');
+                     });
+                     $("#PT").click(function() {
+                       $('html,body').animate({
+                            scrollTop: $("#PThere").offset().top},
+                            'slow');
+                        });
+
+
+
+
 
 
  </script>

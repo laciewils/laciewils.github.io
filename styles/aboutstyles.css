@@ -148,32 +148,61 @@ header .aboutmeheadline h1 {
 }
 
 header .aboutmeheadline {
+  height: 350px;
   margin: auto;
-  text-align: center;
-  width: 50%;
-}
+  text-align: left;
+  margin-top: 20px;
+  padding: 60px 100px;
+  width: 100%;}
 
 header .aboutmeheadline h1 span.simple {
   color: #4b1da7;
 }
 
-header .bar {
-  height: 100px;
+.arrow {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.downarrow {
+  width: 32px;
+  padding-bottom: 10px;
+}
+
+.aboutnavbar {
+  text-align: center;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-header .bar .line {
-  border-left:5px solid #D1B280;
-  height:80px;
+.aboutnavbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: black;
 }
 
-header .bar .noline {
-  border-left:0px solid white;
-  height:80px;
+.aboutnavbar li {
+    border-right: 1px solid #bbb;
+    display: inline;
 }
+
+.aboutnavbar li:last-child {
+    border-right: none;
+}
+
+.aboutnavbar li a {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.aboutnavbar li a:hover {
+    background-color: #333;
+}
+
 
 header .aboutmecontent h2 {
   font-weight: bold;
