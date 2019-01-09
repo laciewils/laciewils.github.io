@@ -135,8 +135,9 @@ header a {
 }
 
 .contactcontent {
-  padding-left: 100px;
-  padding-top: 40px;
+
+  margin-top: 20px;
+  padding: 60px 100px;
   width: 100%;
 }
 
